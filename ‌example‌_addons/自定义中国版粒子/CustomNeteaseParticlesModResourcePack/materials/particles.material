@@ -1,0 +1,35 @@
+{
+  "materials": {
+    "version": "1.0.0",
+
+    "my_custom_particle": {
+      "vertexShader": "shaders/my_custom_particle.vertex",
+      "fragmentShader": "shaders/my_custom_particle.fragment",
+      "vertexFields": [
+        {
+          "field": "Position"
+        },
+        {
+          "field": "Color"
+        },
+        {
+          "field": "UV0"
+        }
+      ],
+      "states": [
+        "Blending",
+        "DisableCulling",
+        "DisableDepthWrite"
+      ],
+      "samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureWrap": "Clamp",
+          "textureFilter": "Bilinear"
+        }
+      ],
+      "msaaSupport": "Both"
+    }
+  
+  }
+}

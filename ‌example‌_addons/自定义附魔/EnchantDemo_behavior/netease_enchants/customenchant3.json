@@ -1,0 +1,17 @@
+{
+    //攻击怪物将在怪物位置掉落道具
+    "netease:enchant": {
+      "identifier": "demoenchant:customenchant3",
+      "description": "enchantment.customenchant3",
+      "primary_slots": ["pickaxe"],
+      "cost": [1, 2, 4],
+
+      "frequency": "very_rare",
+      "is_treasure_only": false,
+      "is_discoverable": true,
+      "is_lootable": true,
+      "is_curse": false,
+      "max_level": 3,
+      "incompatible": ["unbreaking"]
+    }
+  }

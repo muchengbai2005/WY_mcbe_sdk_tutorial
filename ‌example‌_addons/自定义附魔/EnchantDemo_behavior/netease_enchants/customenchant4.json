@@ -1,0 +1,17 @@
+{
+    // 诅咒型附魔
+    "netease:enchant": {
+      "identifier": "demoenchant:customenchant4",
+      "description": "enchantment.customenchant4",
+      "primary_slots": ["sword"],
+      "cost": [1],
+
+      "frequency": "very_rare",
+      "is_treasure_only": false,
+      "is_discoverable": true,
+      "is_lootable": true,
+      "is_curse": true,
+      "max_level": 1,
+      "incompatible": ["unbreaking"]
+    }
+  }

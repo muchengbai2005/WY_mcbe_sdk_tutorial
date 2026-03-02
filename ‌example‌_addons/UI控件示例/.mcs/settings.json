@@ -1,0 +1,8 @@
+{
+    "FirstTabSetting": 0,
+    "ShortItemSettings": [
+        "uidemoResourcePack\\ui",
+        "uidemoResourcePack\\models",
+        "uidemoResourcePack\\textures"
+    ]
+}

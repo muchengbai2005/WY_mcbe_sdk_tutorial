@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "customblocks:customblocks_test_face4_tinted",
+      "category": "custom"
+    },
+    "components": {
+	  "netease:face_directional": {
+	    "type": "direction"
+	  }
+    }
+  }
+}

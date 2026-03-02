@@ -1,0 +1,183 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "customblocks:customblocks_test0": {
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "customblocks:customblocks_test0_up",
+      "down": "customblocks:customblocks_test0_other",
+      "side": "customblocks:customblocks_test0_other"
+    },
+    "carried_textures": {
+      "up": "customblocks:customblocks_test0_up",
+      "down": "customblocks:customblocks_test0_other",
+      "side": "customblocks:customblocks_test0_other"
+    },
+    "sound": "stone"
+  },
+  "customblocks:customblocks_test_ore": {
+    "textures": "customblocks:customblocks_test_ore",
+    "sound": "stone"
+  },
+  "customblocks:customblocks_test_heavy": {
+    "textures": "customblocks:customblocks_test_heavy",
+    "sound": "stone"
+  },
+  "customblocks:customblocks_test_face4": {
+    "textures": {
+      "up": "customblocks:customblocks_test_face4_top",
+      "down": "customblocks:customblocks_test_face4_top",
+      "north": "customblocks:customblocks_test_face4_front",
+      "south": "customblocks:customblocks_test_face4_side",
+      "west": "customblocks:customblocks_test_face4_side",
+      "east": "customblocks:customblocks_test_face4_side"
+    },
+    "sound": "stone"
+  },
+  "customblocks:customblocks_test_face6": {
+    "textures": {
+      "up": "customblocks:customblocks_test_face6_top",
+      "down": "customblocks:customblocks_test_face6_down",
+      "north": "customblocks:customblocks_test_face6_front",
+      "south": "customblocks:customblocks_test_face6_back",
+      "west": "customblocks:customblocks_test_face6_side",
+      "east": "customblocks:customblocks_test_face6_side"
+    },
+    "sound": "stone"
+  },
+  "customblocks:customblocks_test_mobspawner": {
+    "textures": "mob_spawner",
+    "sound": "metal"
+  },
+  "customblocks:customblocks_test_mobspawner1": {
+    "textures": "mob_spawner",
+    "sound": "metal"
+  },
+  "customblocks:customblocks_redstone": {
+    "textures": "customblocks:customblocks_redstone_block",
+    "sound": "stone"
+  },
+  "customblocks:customblocks_redstone_consumer": {
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "customblocks:customblocks_redstone_consumer_up",
+      "down": "customblocks:customblocks_consumer_stone_slab",
+      "side": "customblocks:customblocks_consumer_stone_slab"
+    },
+    "sound": "stone"
+  },
+  "customblocks:customblocks_test_portal_blue": {
+    "textures": "customblocks:customblocks_test_portal_blue",
+    "sound": "glass"
+  },
+  "customblocks:customblocks_test_block_entity": {
+    "textures": "customblocks:customblocks_test_block_entity",
+    "sound": "stone"
+  },
+  "customblocks:customblocks_model_decoration": {
+    "sound": "grass",
+    "netease_model": "customblocks:customblocks_model_decoration"
+  },
+  "customblocks:customblocks_model_wire": {
+    "sound": "glass",
+    "netease_model": "customblocks:customblocks_model_wire"
+  },
+  "customblocks:customblocks_model_flower": {
+    "sound": "grass",
+    "netease_model": "customblocks:customblocks_model_flower"
+  },
+  "customblocks:customblocks_flower_extend": {
+    "sound": "grass",
+    "netease_model": "customblocks:customblocks_flower_extend"
+  },
+  "customblocks:customblocks_slime": {
+    "textures": "customblocks:customblocks_slime",
+    "sound": "stone"
+  },
+  "customblocks:custom_block_squirrel": {
+    "sound": "grass",
+     // 可与"netease_model"一起使用
+    "netease_model": "customblocks:customblocks_model_decoration",
+     
+     // --- 实体模型配置 ---
+     // 这个方块实体将会使用到实体模型
+    "client_entity": {
+       // 对应custom_block_squirrel.entity.json里面的identifier
+      "identifier": "customblocks:custom_block_squirrel",
+       // 这个方块实体的手持模型或掉落时模型是否使用该实体模型。
+      "hand_model_use_client_entity": true, 
+       // 这个方块实体的物品icon贴图
+      "block_icon": "test_block_icon", 
+       // 方块实体被破坏时使用的贴图
+      "destroyed_textures":"destroy_squirrel" 
+    },
+    
+     // --- 特效配置 ---
+     // 使用网易粒子特效
+    "netease_particle_effects": {  
+        // 粒子特效
+        "particle1": { "path": "effects/equip_fire.json", "pos": [1.4,1.0,0.5]},
+        "particle2": { "path": "effects/equip_fire.json", "pos": [-0.4,1.0,0.5]} 
+        //... 可以定义多个，注意性能消耗
+    },
+    // 使用网易序列帧特效
+    "netease_frame_effects": { 
+        // 序列帧特效，编辑器导出的json文件
+        "frame1": { "path": "effects/sfx_editor_ver.json", "pos": [1.4,1.0,0.5]},
+        // 序列帧特效，直接由Texture Packer导出的资源文件
+        "frame2": { "path": "textures/sfxs/buff_hongse", "pos": [-0.4,1.0,0.5]} 
+         //... 可以定义多个，注意性能消耗
+    }
+  },
+  "customblocks:customblocks_model_flower_tinted": {
+    "sound": "grass",
+    "netease_model": "customblocks:customblocks_model_flower",
+    // 使用"use_colormap"字段指定使用的colormap贴图路径, 分辨率固定为256x256, 暂不支持其他分辨率
+    // 使用colormap后, 该方块的颜色将会随群系的变化而变化
+    // colormap支持字符串和dict格式，配置成字符串格式表示所有维度使用同一张colormap贴图，配置成dict格式可以对指定维度使用指定colormap贴图，其中default所指定为默认贴图。
+    "use_colormap":"textures/colormap/my_grass"
+  },
+  "customblocks:customblocks_leaves_tinted": {
+    "sound": "grass",
+    "textures": "customblocks:customblocks_leaves_tinted",
+    // 使用"use_colormap"字段指定使用的colormap贴图路径, 分辨率固定为256x256, 暂不支持其他分辨率
+    // 使用colormap后, 该方块的颜色将会随群系的变化而变化
+    // colormap支持字符串和dict格式，配置成字符串格式表示所有维度使用同一张colormap贴图，配置成dict格式可以对指定维度使用指定colormap贴图，其中default所指定为默认贴图。
+    "use_colormap":"textures/colormap/my_grass"
+  },
+  "customblocks:customblocks_leaves_tinted_by_dimension": {
+    "sound": "grass",
+    "textures": "customblocks:customblocks_leaves_tinted",
+    // 使用"use_colormap"字段指定使用的colormap贴图路径, 分辨率固定为256x256, 暂不支持其他分辨率
+    // 使用colormap后, 该方块的颜色将会随群系的变化而变化
+    // colormap支持字符串和dict格式，配置成字符串格式表示所有维度使用同一张colormap贴图，配置成dict格式可以对指定维度使用指定colormap贴图，其中default所指定为默认贴图。
+    "use_colormap":{
+      "default":"textures/colormap/my_grass",   // 默认的colormap贴图（所在维度没有配置对应贴图时，使用默认贴图）
+      "overworld":"textures/colormap/my_grass", // 主世界的colormap贴图
+      "nether":"textures/colormap/my_color2",   // 下界的colormap贴图
+      "the end":"textures/colormap/my_color2",   // 末地的colormap贴图
+      // 自定义维度colormap贴图
+      "dm3":"textures/colormap/my_color2",
+      "dm5":"textures/colormap/my_color2",
+      "dm22":"textures/colormap/my_color2"
+    }
+  },
+  "customblocks:customblocks_test_face4_tinted": {
+    "textures": {
+      "down": "customblocks:customblocks_test_face4_front_tinted",  // 这个贴图使用了带colormap的贴图(colormap在textures/terrain_texture.json中指定), 该面的颜色将会随群系的变化而变化
+      "up": "customblocks:customblocks_test_face4_front_not_tinted",
+      "north": "customblocks:customblocks_test_face4_top_tinted", // 这个贴图使用了带colormap的贴图(colormap在textures/terrain_texture.json中指定), 该面的颜色将会随群系的变化而变化
+      "south": "customblocks:customblocks_test_face4_top_sides_not_tinted",
+      "west": "customblocks:customblocks_test_face4_top_sides_not_tinted",
+      "east": "customblocks:customblocks_test_face4_top_tinted_by_dimension" // 这个贴图使用了带colormap的贴图(colormap在textures/terrain_texture.json中指定), 该面的颜色将会随群系的变化而变化，且在不同的维度中会使用不同的colormap的贴图
+    },
+    "sound": "stone"
+  }
+}

@@ -1,0 +1,63 @@
+{
+    "format_version": "1.14.0", 
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm111_plains", 
+            "inherits": "plains"
+        }, 
+        "components": {
+            "netease:overworld_surface": {
+                "adjustments": [
+                    {
+                        "type": "fill",   // 必填：高度控制节点类型，填充节点（fill）
+                        "min_height": 90,   // 必填：选取的最小高度，支持molang字符串。如果超过自定义维度的最小高度，则进游戏时会弹出断言窗口
+                        "max_height": 95,  // 必填：选取的最大高度，支持molang字符串。如果超过自定义维度的最大高度，则进游戏时会弹出断言窗口
+                        "pool": [   // fill类型必填：填充的方块池，根据权重，对选中的区域进行填充
+                            {
+                                "fill_block": "minecraft:glass",   // "fill_block"是填充的方块名称，支持附加值
+                                "weight": 10   // "weight"是填充的方块的生成权重
+                            },
+                            {
+                                "fill_block": "minecraft:gold_block",   // "fill_block"是填充的方块名称，支持附加值
+                                "weight": 1   // "weight"是填充的方块的生成权重
+                            }
+                        ]
+                    },
+                    {
+                        "type": "replace",   // 必填：高度控制节点类型，替换节点（replace）
+                        "min_height": "variable.height - 3",   // 必填：选取的最小高度，支持molang字符串。如果超过自定义维度的最小高度，则进游戏时会弹出断言窗口
+                        "max_height": "variable.height",   // 必填：选取的最大高度，支持molang字符串。如果超过自定义维度的最大高度，则进游戏时会弹出断言窗口
+                        "percentage" : 0.5,                //repalce类型必填，被替换比例，范围(0, 1],代表被替换池中所有方块总数的被替换比率
+                        "from_block_pool":[                //replace类型必填，被替换池，方块类型支持附加值
+                            "minecraft:air",
+                            "minecraft:grass"
+                        ],
+                        "to_block_pool":[ //replace类型必填，根据权重，对选中的区域进行比例替换
+                            {
+                                "fill_block": { //"fill_block"替换的方块名称，支持附加值
+                                    "name": "minecraft:wool",
+                                    "states": {
+                                        "color": "black"
+                                    }
+                                },
+                                "weight": 10 // "weight"替换的方块的生成权重
+                            },
+                            {
+                                "fill_block": "minecraft:end_bricks", //"fill_block"替换的方块名称，支持附加值
+                                "weight": 10 // "weight"替换方块的生成权重
+                            }
+                        ]
+                        
+                    },
+                    {
+                        "type": "move",   // 必填：高度控制节点类型，移动节点（move）
+                        "min_height": "variable.height - 3",   // 必填：选取的最小高度，支持molang字符串。如果超过自定义维度的最小高度，则进游戏时会弹出断言窗口
+                        "max_height": "variable.height",   // 必填：选取的最大高度，支持molang字符串。如果超过自定义维度的最大高度，则进游戏时会弹出断言窗口
+                        "move_offset": 5   // move类型必填：上下移动偏移量（正整数表示向上移动，负整数表示向下移动），暂不支持molang语句
+                    }
+            ]
+            },
+            "dm111": {}
+        }
+    }
+}

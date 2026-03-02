@@ -1,0 +1,8 @@
+[
+    {
+        "flipbook_texture": "textures/items/bottom_layer_4",
+        "atlas_tile": "customitems:bottom_layer_4",
+        "ticks_per_frame": 10,
+        "blend_frames": true
+    }
+]

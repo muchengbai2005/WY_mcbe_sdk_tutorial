@@ -1,0 +1,29 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "panel" : {
+               "controls" : [
+                  {
+                     "label" : {
+                        "color" : [ 1.0, 0.0, 0.0 ],
+                        "font_type" : "default",
+                        "layer" : 1,
+                        "offset" : [ -0.50, 8.50 ],
+                        "size" : [ 96, 100 ],
+                        "text" : "操作指南：\n聊天框输入\"oldtvDemo\"或者\"scanmapDemo\"开启对应的自定义后处理效果",
+                        "type" : "label"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "offset" : [ -186.0, -88.0 ],
+               "size" : [ 132, 96 ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "instruction"
+}

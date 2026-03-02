@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "enchantdemo:pickaxe_enchant",
+      "register_to_create_menu":true,
+      "category": "equipment"
+    },
+
+    "components": {
+      "minecraft:max_damage":100,
+      "minecraft:foil":false,
+      "minecraft:max_stack_size":1,
+      "netease:weapon": {
+        "type": "pickaxe",
+        "level": 0,
+        "speed": 2,
+        "attack_damage": 2,
+        "enchantment": -1
+      }
+    }
+  }
+}

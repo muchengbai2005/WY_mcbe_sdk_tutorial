@@ -1,0 +1,6 @@
+{
+    "editor_identifier": "Book1",
+    "title": "类目1",
+    "content": "这两页为§l类目1的首页§r。\n管理这两页的对象为\n§4§l\"Category1\"§r\n同时它还指向子页组对象\n§4§l\"Entry1\"",
+    "icon": "textures/items/apple"
+}

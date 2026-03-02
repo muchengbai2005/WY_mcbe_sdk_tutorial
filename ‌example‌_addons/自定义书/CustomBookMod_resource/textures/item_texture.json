@@ -1,0 +1,15 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "custombooks:test0":{
+            "textures": "textures/items/custom_book"
+        },
+        "custombooks:addrbook":{
+            "textures": "textures/items/addr_book"
+        }, 
+        "custombooks:recyclebook":{
+            "textures": "textures/items/recycle_book"
+        }               
+    }
+}

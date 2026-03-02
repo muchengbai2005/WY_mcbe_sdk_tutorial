@@ -1,0 +1,427 @@
+{
+   "ExitButton@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "退出",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%DollDemo.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "bottom_left",
+      "anchor_to" : "bottom_left",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@DollDemo.default" : {}
+         },
+         {
+            "hover@DollDemo.hover" : {}
+         },
+         {
+            "pressed@DollDemo.pressed" : {}
+         },
+         {
+            "button_label@DollDemo.button_label" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 11,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0, 0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 75.0, 50.0 ],
+      "visible" : true
+   },
+   "button2@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "模型一",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%DollDemo.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@DollDemo.default" : {}
+         },
+         {
+            "hover@DollDemo.hover" : {}
+         },
+         {
+            "pressed@DollDemo.pressed" : {}
+         },
+         {
+            "button_label@DollDemo.button_label" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 1,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ "-17.68%+0.0px", "12.4%+0.0px" ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 100, 50 ],
+      "visible" : true
+   },
+   "button3@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "模型二",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%DollDemo.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@DollDemo.default" : {}
+         },
+         {
+            "hover@DollDemo.hover" : {}
+         },
+         {
+            "pressed@DollDemo.pressed" : {}
+         },
+         {
+            "button_label@DollDemo.button_label" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 5,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ "17.68%+0.0px", "12.4%+0.0px" ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 100, 50 ],
+      "visible" : true
+   },
+   "button_label" : {
+      "alpha" : "$control_alpha",
+      "color" : "$label_color",
+      "font_scale_factor" : "$label_font_scale_factor",
+      "font_size" : "$label_font_size",
+      "font_type" : "smooth",
+      "layer" : "$label_layer",
+      "max_size" : [ "100%", "100%" ],
+      "offset" : "$label_offset",
+      "shadow" : false,
+      "text" : "$label_text",
+      "text_alignment" : "center",
+      "type" : "label"
+   },
+   "default" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$default_texture",
+      "type" : "image"
+   },
+   "dollButtonExplain" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1, 1, 1 ],
+      "enabled" : true,
+      "font_scale_factor" : 1.409999966621399,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 9,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0.0, "40.35%+0.0px" ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 249.60, 100.0 ],
+      "text" : "说明：该场景展示了纸娃娃控件和按钮控件的使用方法。点击按钮可以改变纸娃娃模型。",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "dollPanel" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "button_mappings" : [
+         {
+            "button_up_right_of_first_refusal" : true,
+            "from_button_id" : "button.menu_select",
+            "mapping_type" : "pressed",
+            "to_button_id" : "button.turn_doll"
+         }
+      ],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "contained" : false,
+      "controls" : [
+         {
+            "button2@DollDemo.button2" : {}
+         },
+         {
+            "button3@DollDemo.button3" : {}
+         },
+         {
+            "dollButtonExplain@DollDemo.dollButtonExplain" : {}
+         },
+         {
+            "toggleRadioPanel@DollDemo.toggleRadioPanel" : {}
+         },
+         {
+            "paper_doll0@DollDemo.paper_doll0" : {}
+         },
+         {
+            "ExitButton@DollDemo.ExitButton" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "gesture_tracking_button" : "button.turn_doll",
+      "layer" : 0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "modal" : false,
+      "offset" : [ 0, 0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+      "type" : "input_panel",
+      "visible" : true
+   },
+   "testToggleGroup": {
+      "type": "stack_panel",
+      "$default_selector_toggle_index": 0,
+      "controls": [
+         {
+            "@DollDemo.tab_toggle_button": {
+               "$buttonLabel": "文本控件演示",
+               "$toggle_group_forced_index": 0
+            }
+         },
+         {
+            "@DollDemo.tab_toggle_button": {
+               "$buttonLabel": "图片控件演示",
+               "$toggle_group_forced_index": 1
+            }
+         },
+         {
+            "@DollDemo.tab_toggle_button": {
+               "$buttonLabel": "纸娃娃控件演示",
+               "$toggle_group_forced_index": 2
+            }
+         }
+      ]
+   },
+   "toggleRadioPanel": {
+      "layer" : 50,
+      "anchor_from": "left_middle",
+      "anchor_to": "left_middle",
+      "type" : "panel",
+      "size" : [ 90, "default" ],
+      "visible":true,
+      "controls" :[
+         {
+            "testToggleGroup@DollDemo.testToggleGroup": {}
+         }
+      ]
+  },
+  "tab_toggle_button": {
+      "type": "panel",
+      "anchor_from": "top_left",
+      "anchor_to": "top_left",
+      "size": [ "100%", "30px" ],
+      "controls": [
+         {
+            "tab_toggle_button@common_toggles.light_ui_toggle": {
+               "anchor_from": "top_left",
+               "anchor_to": "top_left",
+               "size": [ "100%", "30px" ],
+               "$button_type_panel": "DollDemo.toggle_button_control",
+               "$checked_control": "common_toggles.toggle_unchecked",
+               "$radio_toggle_group": true,
+               "$toggle_name": "#toggle_radio_tab",
+               "$toggle_group_default_selected": "$default_selector_toggle_index"
+            }
+         }
+      ]
+   },
+   "toggle_button_control": {
+      "type": "panel",
+      "layer": 2,
+      "controls": [
+         {
+            "tab_button_text": {
+               "type": "label",
+               "$buttonLabel|default": "测试",
+               "color": [ 0, 0, 0 ],
+               "text": "$buttonLabel",
+               "layer": 3
+            }
+         }
+      ]
+   },
+   "hover" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$hover_texture",
+      "type" : "image"
+   },
+   "main" : {
+      "absorbs_input" : true,
+      "always_accepts_input" : false,
+      "controls" : [
+         {
+            "dollPanel@DollDemo.dollPanel" : {}
+         }
+      ],
+      "force_render_below" : false,
+      "is_showing_menu" : true,
+      "render_game_behind" : true,
+      "render_only_when_topmost" : true,
+      "should_steal_mouse" : false,
+      "type" : "screen"
+   },
+   "namespace" : "DollDemo",
+   "paper_doll0" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "animation" : "idle",
+      "animation_looped" : true,
+      "bindings" : [
+         {
+            "binding_type" : "view",
+            "source_control_name" : "dollPanel",
+            "source_property_name" : "#gesture_delta_source",
+            "target_property_name" : "#gesture_delta_source"
+         },
+         {
+            "binding_type" : "view",
+            "source_control_name" : "dollPanel",
+            "source_property_name" : "#gesture_mouse_delta_x",
+            "target_property_name" : "#gesture_mouse_delta_x"
+         }
+      ],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "enabled" : true,
+      "entity_identifier" : "",
+      "init_rot_y" : 60.0,
+      "layer" : 10,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0.0, "-21.6%+0.0px" ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "renderer" : "netease_paper_doll_renderer",
+      "rotation" : "gesture_x",
+      "screen_scale" : 1.0,
+      "size" : [ 100, 100 ],
+      "skeleton_model_name" : "",
+      "type" : "custom",
+      "visible" : true
+   },
+   "pressed" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$pressed_texture",
+      "type" : "image"
+   }
+}

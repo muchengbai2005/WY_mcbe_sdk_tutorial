@@ -1,0 +1,22 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_sword",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            // 随机为装备/工具附上允许的附魔
+                            "function": "enchant_random_gear",
+                            // 被附魔的概率
+                            "chance": 0.25
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "format_version": "1.18.0",
+    "netease:large_feature_pool": {
+        "description": {
+            "identifier": "netease:streets" //结构池identifier
+        },
+        "pool": [{//结构池
+                "structure_name": "netease:street_zhi", //结构名称
+                "path": "largefeature:street_zhi", //结构的路径
+                "weight": 4 //结构被随机出来的权重
+            },
+            {
+                "structure_name": "netease:street_cross",
+                "path": "largefeature:street_cross",
+                "weight": 1
+            },
+            {
+                "structure_name": "netease:house_zhi",
+                "path": "largefeature:house_zhi",
+                "weight": 4
+            },
+            {
+                "structure_name": "netease:house_t",
+                "path": "largefeature:house_t",
+                "weight": 1
+            },
+            {
+                "structure_name": "netease:stairs_up",
+                "path": "largefeature:stairs_up",
+                "weight": 1
+            },
+            {
+                "structure_name": "netease:stairs_down",
+                "path": "largefeature:stairs_down",
+                "weight": 4
+            },
+            {
+                "structure_name": "netease:house_shizi",
+                "path": "largefeature:house_shizi",
+                "weight": 1
+            }
+        ],
+        "end_pool": "netease:end_pool" //终结池，主要用于生成大型结构的末端结构，比如村庄道路的尽头
+
+    }
+
+}

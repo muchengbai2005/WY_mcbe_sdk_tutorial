@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "design:nbt_egg"
+        },
+        "description": {
+            "category": "Items",
+            "identifier": "design:nbt_egg",
+            "register_to_create_menu": true
+        }
+    }
+}

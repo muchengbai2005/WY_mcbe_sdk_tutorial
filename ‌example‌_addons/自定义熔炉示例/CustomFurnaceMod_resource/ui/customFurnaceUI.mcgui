@@ -1,0 +1,86 @@
+{
+   "AutoControlLayer" : false,
+   "Version" : "0.1.0",
+   "children" : [
+      {
+         "children" : [
+            {
+               "children" : [],
+               "mCanPrefab" : false,
+               "mCurrent" : "main",
+               "mName" : "customContainerPanel",
+               "mPath" : "/netease_editor_root_panel_main/customContainerPanel",
+               "mRefName" : "customFurnacePanel",
+               "mRefNamespace" : "customFurnaceUI",
+               "mRefValue" : {
+                  "anchor_from" : "top_middle",
+                  "anchor_to" : "top_middle",
+                  "controls" : [
+                     {
+                        "headerContentStackPanel@customFurnaceUI.headerContentStackPanel" : {}
+                     },
+                     {
+                        "background@neteaseCommonUI.background" : {}
+                     },
+                     {
+                        "itemDetail@neteaseCommonUI.itemDetail" : {}
+                     },
+                     {
+                        "dropArea@neteaseCommonUI.dropButton" : {
+                           "layer" : 3
+                        }
+                     },
+                     {
+                        "progressiveBar@neteaseCommonUI.progressBar" : {
+                           "$barMaskSize" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                           "$progressBarSize" : [ 18, 3 ]
+                        }
+                     }
+                  ],
+                  "layer" : 1,
+                  "offset" : [ 0, 0 ],
+                  "type" : "panel",
+                  "visible" : true
+               },
+               "mScreenConnectControllerPath" : "",
+               "mScreenConnectScreen" : "",
+               "mTemplate" : "inheritor",
+               "properties" : {}
+            }
+         ],
+         "mCanPrefab" : true,
+         "mCurrent" : "main",
+         "mName" : "main",
+         "mPath" : "/",
+         "mRefName" : "",
+         "mRefNamespace" : "",
+         "mRefValue" : null,
+         "mScreenConnectControllerPath" : "",
+         "mScreenConnectScreen" : "",
+         "mTemplate" : "base_screen",
+         "properties" : {
+            "$screen_content" : "\"customFurnaceUI.netease_editor_root_panel_main\"\n",
+            "absorbs_input" : "true\n",
+            "always_accepts_input" : "false\n",
+            "controls" : "",
+            "force_render_below" : "false\n",
+            "is_showing_menu" : "true\n",
+            "render_game_behind" : "true\n",
+            "render_only_when_topmost" : "true\n",
+            "should_steal_mouse" : "false\n",
+            "type" : "screen"
+         }
+      }
+   ],
+   "mCanPrefab" : true,
+   "mCurrent" : "main",
+   "mName" : "customFurnaceUI",
+   "mPath" : "namespace",
+   "mRefName" : "",
+   "mRefNamespace" : "",
+   "mRefValue" : null,
+   "mScreenConnectControllerPath" : "",
+   "mScreenConnectScreen" : "",
+   "mTemplate" : "namespace",
+   "properties" : {}
+}

@@ -1,0 +1,301 @@
+{
+   "button@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "退出",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%NeteaseComboBoxDemo.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+   ],
+   "button_mappings" : [],
+   "clip_offset" : [ 0, 0 ],
+   "clips_children" : false,
+   "controls" : [
+      {
+         "default@NeteaseComboBoxDemo.default" : {}
+      },
+      {
+         "hover@NeteaseComboBoxDemo.hover" : {}
+      },
+      {
+         "pressed@NeteaseComboBoxDemo.pressed" : {}
+      },
+      {
+         "button_label@NeteaseComboBoxDemo.button_label" : {}
+      }
+   ],
+   "draggable" : "not_draggable",
+   "enabled" : true,
+   "is_handle_button_move_event" : true,
+   "layer" : 12,
+   "max_size" : [ 0, 0 ],
+   "min_size" : [ 0, 0 ],
+   "offset" : [ 0, 0 ],
+   "priority" : 0,
+   "propagate_alpha" : false,
+   "size" : [ 75.0, 50.0 ],
+   "visible" : true
+},
+   "custom_selection_wheel_content": {
+      "type": "panel",
+      "controls" : [
+         {
+            "changed_controls": {
+               "controls": [
+                  {
+                     "state_default@SelectionWheelScreen_3.wheel_default_state": {
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_default"
+                     }
+                  },
+                  {
+                     "state_0@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ -113.0, -64.0 ],
+                        "$hover_text_alignment" : "right",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_0"
+                     }
+                  },
+                  {
+                     "state_1@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ -49.0, -105.50 ],
+                        "$hover_text_alignment" : "right",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_1"
+                     }
+                  },
+                  {
+                     "state_2@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ 50, -107 ],
+                        "$hover_text_alignment" : "left",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_2"
+                     }
+                  },
+                  {
+                     "state_3@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ 112.0, -66.0 ],
+                        "$hover_text_alignment" : "left",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_3"
+                     }
+                  },
+                  {
+                     "state_4@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ 132.0, 0.0 ],
+                        "$hover_text_alignment" : "left",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_4"
+                     }
+                  },
+                  {
+                     "state_5@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ 112.0, 63.0 ],
+                        "$hover_text_alignment" : "left",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_5"
+                     }
+                  },
+                  {
+                     "state_6@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ 62.0, 103.0 ],
+                        "$hover_text_alignment" : "left",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_6"
+                     }
+                  },
+                  {
+                     "state_7@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ -59.0, 103.0 ],
+                        "$hover_text_alignment" : "right",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_7"
+                     }
+                  },
+                  {
+                     "state_8@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ -111.0, 63.0 ],
+                        "$hover_text_alignment" : "right",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_8"
+                     }
+                  },
+                  {
+                     "state_9@SelectionWheelScreen_3.wheel_state": {
+                        "$hover_offset" : [ -131.0, 2.0 ],
+                        "$hover_text_alignment" : "right",
+                        "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_9"
+                     }
+                  }
+               ],
+               "type": "panel"
+            }
+         },
+         {
+            "unchanged_controls": {
+               "layer": 10,
+               "controls": [
+                  {
+                     "state_content_0@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ -61.0, -44.0 ]
+                     }
+                  },
+                  {
+                     "state_content_1@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ -23.0, -71.0 ]
+                     }
+                  },
+                  {
+                     "state_content_2@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ 22.0, -72.0 ]
+                     }
+                  },
+                  {
+                     "state_content_3@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ 60.0, -44.0 ]
+                     }
+                  },
+                  {
+                     "state_content_4@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ 75.0, -1.0 ]
+                     }
+                  },
+                  {
+                     "state_content_5@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ 61.0, 42.0 ]
+                     }
+                  },
+                  {
+                     "state_content_6@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ 22.0, 72.0 ]
+                     }
+                  },
+                  {
+                     "state_content_7@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ -22.0, 72.0 ]
+                     }
+                  },
+                  {
+                     "state_content_8@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ -62.0, 44.0 ]
+                     }
+                  },
+                  {
+                     "state_content_9@SelectionWheelScreen_3.wheel_state_content" : {
+                        "$item_offset" : [ -77.0, 0.0 ]
+                     }
+                  },
+                  {
+                     "center_label" : {
+                        "font_type" : "smooth",
+                        "text_alignment": "center",
+                        "size": [80, "default"],
+                        "type": "label"
+                     }
+                  }
+               ],
+               "type": "panel"
+            }
+         }
+      ]
+   },
+   "custom_selection_wheel@common_selection_wheels.base_selection_wheel" : {
+      "$content": "SelectionWheelScreen_3.custom_selection_wheel_content",
+      "slice_count" : 10,
+      "inner_radius" : 0.50,
+      "outer_radius" : 1.0,
+      "initial_button_slice": -1,
+      "size" : [ 200, 200 ],
+      "state_controls" : [
+         "state_default",
+         "state_0",
+         "state_1",
+         "state_2",
+         "state_3",
+         "state_4",
+         "state_5",
+         "state_6",
+         "state_7",
+         "state_8",
+         "state_9"
+      ]
+   },
+   "main" : {
+      "controls" : [
+         {
+            "my_selection_wheel@SelectionWheelScreen_3.custom_selection_wheel" : {}
+         },
+         {
+            "SelectButton@SelectionWheelScreen_3.button" : {
+               "$label_text" : "切换选择",
+               "anchor_from" : "bottom_left",
+               "anchor_to" : "bottom_left",
+               "offset": [0, -55]
+            }
+         },
+         {
+            "ExitButton@SelectionWheelScreen_3.button" : {
+               "$label_text" : "退出",
+               "anchor_from" : "bottom_left",
+               "anchor_to" : "bottom_left"
+            }
+         }
+      ],
+      "gamepad_cursor_deflection_mode": true,
+      "type" : "screen"
+   },
+   "namespace" : "SelectionWheelScreen_3",
+   "wheel_default_state" : {
+      "$state_texture" : "textures/ui/SelectionWheel/3/custom_wheel_selection_default",
+      "texture" : "$state_texture",
+      "type" : "image"
+   },
+   "wheel_state" : {
+      "$hover_font_type" : "default",
+      "$hover_offset" : [ 0, 0 ],
+      "$hover_text" : "hover文本内容",
+      "$hover_text_alignment" : "center",
+      "controls" : [
+         {
+            "hover_tip" : {
+               "font_type" : "$hover_font_type",
+               "offset" : "$hover_offset",
+               "text" : "$hover_text",
+               "text_alignment" : "$hover_text_alignment",
+               "type" : "label"
+            }
+         }
+      ],
+      "texture" : "$state_texture",
+      "type" : "image"
+   },
+   "wheel_state_content" : {
+      "$item_offset" : [ 0, 0 ],
+      "$item_size" : [ 30, 30 ],
+      "controls" : [
+         {
+            "item" : {
+               "offset" : "$item_offset",
+               "property_bag" : {
+                  "#item_id_aux" : 131072
+               },
+               "renderer" : "inventory_item_renderer",
+               "size" : "$item_size",
+               "type" : "custom"
+            }
+         }
+      ],
+      "type" : "panel"
+   }
+}

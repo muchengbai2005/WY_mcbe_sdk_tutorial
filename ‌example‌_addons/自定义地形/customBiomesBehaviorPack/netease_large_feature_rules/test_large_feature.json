@@ -1,0 +1,16 @@
+{
+  "format_version": "1.14.0",
+  "netease:large_feature_rules": {
+    "description": {
+      "identifier": "netease:large_feature_test", //大型结构摆放规则identifier(必填)
+      "place_pool": "netease:centerPool" //摆放结构池的identifier(必填)
+    },
+    "allowed_biomes":[ //允许产生的群系tag(可查看dm1010_plains.json来查看如何添加群系tag)
+      "dm1010_plains"
+    ],
+    "town_spacing":15, //间隔距离：比如15，则 15 * 15个区块的正方形内，选择一个点摆放(必填)
+    "min_town_separation":4, //距离边缘距离：比如4，则在15 * 15个区块的正方形内圈出11 * 11的正方形，并在正方形内部选取一个区块进行摆放
+    "max_depth": 8, //递归深度越多，生成的结构越多，比如村庄的道路，调高之后，村庄道路变长
+    "height" : 100  //大型结构的初始高度，如不填则默认取最高非空气方块位置
+  }
+}

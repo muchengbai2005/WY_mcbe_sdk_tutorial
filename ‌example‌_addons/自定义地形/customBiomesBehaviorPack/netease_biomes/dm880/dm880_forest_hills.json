@@ -1,0 +1,22 @@
+{
+    "format_version": "1.14.0",
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm880_forest_hills", 
+            "inherits": "forest_hills"
+        },
+        "components": {
+            "netease:overworld_surface":{
+                "adjustments": [
+                    {
+                        "type": "move",   // 必填：type类型。目前仅支持：填充节点（fill），移动节点（move）
+                        "min_height": "variable.height - 10",   // 必填：选取的最小高度，支持molang字符串。如果超过自定义维度的最小高度，则进游戏时会弹出断言窗口  variable.height - 5
+                        "max_height": "variable.height",   // 必填：选取的最大高度，支持molang字符串。如果超过自定义维度的最大高度，则进游戏时会弹出断言窗口
+                        "move_offset": "math.sin(variable.worldx * 180 / math.pi / 10) * 10 + 20"   // 必填：上下移动偏移量，使用molang语句
+                    }
+                ]
+            },
+            "dm3": {}
+        }
+    }
+}

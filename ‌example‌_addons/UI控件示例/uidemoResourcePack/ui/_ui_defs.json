@@ -1,0 +1,28 @@
+{
+    "ui_defs": [
+        "ui/DollDemo.json",
+        "ui/GridDemo.json",
+        "ui/ImageDemo.json",
+        "ui/InputPanelDemo.json",
+        "ui/ItemRendererDemo.json",
+        "ui/LabelTextDemo.json",
+        "ui/MainScreen.json",
+        "ui/NeteaseComboBoxDemo.json",
+        "ui/netease_editor_template_namespace.json",
+        "ui/ProgressBarDemo.json",
+        "ui/PushScreenDemo.json",
+        "ui/RichTextDemo.json",
+        "ui/ScrollViewDemo.json",
+        "ui/SliderDemo.json",
+        "ui/ToggleDemo.json",
+        "ui/ToggleRadioDemo.json",
+        "ui/UIAnimationScreen.json",
+        "ui/UIDemo.json",
+        "ui/UIDemoCommon.json",
+        "ui/SelectionWheel/SelectionWheelScreen_menu.json",
+        "ui/SelectionWheel/SelectionWheelScreen_1.json",
+        "ui/SelectionWheel/SelectionWheelScreen_2.json",
+        "ui/SelectionWheel/SelectionWheelScreen_3.json",
+        "ui/ImageRotate.json"
+    ]
+}

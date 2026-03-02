@@ -1,0 +1,43 @@
+{
+	"namespace": "AetherPresetButtonUI",
+	"main@hud.hud_screen": {
+		"$screen_content": "AetherPresetButtonUI.panel0",
+		"button_mappings": []
+	},
+	"panel0": {
+		"type": "panel",
+		"layer": 200,
+		"bindings": [{
+			"binding_name": "#hud_visible",
+			"binding_name_override": "#visible",
+			"binding_type": "global"
+		}, {
+			"binding_name": "#hud_alpha",
+			"binding_name_override": "#alpha",
+			"binding_type": "global"
+		}, {
+			"binding_name": "#hud_propagate_alpha",
+			"binding_name_override": "#propagateAlpha",
+			"binding_type": "global"
+		}],
+		"controls": [
+			{"tips": {"type": "label", "anchor_from": "bottom_middle",
+				"anchor_to": "bottom_middle", "offset": [0, -30], "shadow": true
+			}},
+			{"button@common.button": {
+				"anchor_from": "bottom_middle",
+				"anchor_to": "bottom_middle",
+				"offset": [0, -43],
+				"size": [30, 18],
+				"visible": false,
+				"button_mappings": [],
+				"controls": [
+					{"default": {"texture": "textures/ui/button_borderless_light", "type": "image"}},
+					{"hover": {"texture": "textures/ui/button_borderless_light", "type": "image"}},
+					{"pressed": {"texture": "textures/ui/button_borderless_lightpressed", "type": "image"}},
+					{"button_label": {"type": "label", "font_type": "default", "color": [0, 0, 0], "layer": 1}}
+				]
+			}}
+		]
+	}
+}

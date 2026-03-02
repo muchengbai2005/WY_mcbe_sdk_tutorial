@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.squirrel.general": {
+			"initial_state" : "default",
+			"states": {
+				// 默认待机动画状态
+				"default": {
+					"animations": [	"idle" ],
+					"particle_effects": [
+						{ 
+							// entity.json中定义的粒子名称
+							"effect": "headsmoke",
+							// geometry中定义的定位器
+							"locator": "head_locator"
+                        }
+					],
+					 // 该动画状态所播放的自定义音效
+					 "sound_effects": [
+						{
+						  // 使用thunder这个自定义音效
+						  "effect": "thunder"
+						}
+					  ],
+					"transitions": [
+						// 由实体Molang变量"variable.mod_is_moving"控制动画状态切换，初始值在entity.json中的sripts字段中进行定义。
+						{ "squMove": "variable.mod_is_moving==1" }
+					]
+				},
+				// 行走动画状态
+				"squMove": {
+					"animations": ["move"],
+					"transitions": [
+						  // 由实体Molang变量"variable.mod_is_moving"控制动画状态切换，初始值在entity.json中的sripts字段中进行定义。
+						{ "default": "variable.mod_is_moving==2" }
+					]
+				}
+			}
+		}
+	}
+}

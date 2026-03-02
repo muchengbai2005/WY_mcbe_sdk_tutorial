@@ -1,0 +1,89 @@
+{
+  "oldtvDemoMat": {
+    "vertexShader": "shaders/fullscreen.vertex",
+    "fragmentShader": "shaders/oldtvDemo.fragment",
+
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "UV0" }
+    ],
+
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureWrap": "Clamp",
+        "textureFilter": "Bilinear"
+      }
+    ],
+    "states": [
+        "DisableDepthTest"
+    ],  
+
+    "msaaSupport": "Both"
+  },
+
+  "scanmapDemoMat": {
+    "vertexShader": "shaders/fullscreen.vertex",
+    "fragmentShader": "shaders/scanmapDemo.fragment",
+
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "UV0" }
+    ],
+
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureWrap": "Clamp",
+        "textureFilter": "Bilinear"
+      },
+      {
+        "samplerIndex": 1,
+        "textureWrap": "Clamp",
+        "textureFilter": "Point"
+      },
+      {
+        "samplerIndex": 2,
+        "textureWrap": "Clamp",
+        "textureFilter": "Point"
+      }
+    ],
+    "states": [
+        "DisableDepthTest"
+    ],  
+
+    "msaaSupport": "Both"
+  },
+  "lensstainCustomDemoMat":{
+    "vertexShader": "shaders/fullscreen.vertex",
+    "fragmentShader": "shaders/lensstainCustomDemo.fragment",
+
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "UV0" }
+    ],
+
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureWrap": "Clamp",
+        "textureFilter": "Point"
+      },
+      {
+        "samplerIndex": 3,
+        "textureWrap": "Clamp",
+        "textureFilter": "Bilinear"
+      },
+      {
+        "samplerIndex": 4,
+        "textureWrap": "Clamp",
+        "textureFilter": "Bilinear"
+      }
+    ],
+
+    "states": [
+      "DisableDepthTest"
+    ],
+    "msaaSupport": "Both"
+  }
+}

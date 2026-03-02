@@ -1,0 +1,14 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "customblocks:customblocks_redstone_consumer",
+			"category": "custom"
+		},
+		"components": {
+			"netease:redstone": {
+				"type": "consumer"
+			}
+		}
+	}
+}

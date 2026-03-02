@@ -1,0 +1,50 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,  // 解锁该组交易所需的村民经验
+      "groups": [
+        {
+          "num_to_select": 1,  // 从下列交易中选取几项交易
+          "trades": [
+            {
+              // 该交易需求的物品信息
+              "wants": [
+                // 第一个物品
+                {
+                  "item": "minecraft:coal:0", // 物品名称
+                  "quantity": 15,  // 物品数量
+                  "price_multiplier": 0.05  // 价格乘数（影响补货后的价格）
+                }
+              ],
+              // 该交易给予玩家的物品信息
+              "gives": [
+                {
+                  "item": "minecraft:iron_sword", // 物品名称
+                  "quantity": 1,  // 物品数量
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",  // 为物品附上指定等级附魔
+                      // 物品是否能被附上宝藏附魔("is_lootable")，默认为false
+                      "treasure": false,
+                      // 最终等级在最小等级和最大等级间取随机整数
+                      "levels": {
+                        "min": 1,  // 最小附魔等级
+                        "max": 2  // 最大附魔等级
+                      }
+                    }
+                  ]
+                }
+              ],
+              // 单次交易完成后增加的村民经验值
+              "trader_exp": 2,
+              // 最大交易次数
+              "max_uses": 16,
+              // 交易完成后是否给予玩家经验，默认为true
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

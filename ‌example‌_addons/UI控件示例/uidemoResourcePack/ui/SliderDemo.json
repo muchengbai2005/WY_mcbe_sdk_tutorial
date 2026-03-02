@@ -1,0 +1,248 @@
+{
+   "ExitButton@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "退出",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%SliderDemo.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "bottom_left",
+      "anchor_to" : "bottom_left",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@SliderDemo.default" : {}
+         },
+         {
+            "hover@SliderDemo.hover" : {}
+         },
+         {
+            "pressed@SliderDemo.pressed" : {}
+         },
+         {
+            "button_label@SliderDemo.button_label" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 11,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0, 0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 75.0, 50.0 ],
+      "visible" : true
+   },
+   "label7" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1, 1, 1 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "large",
+      "font_type" : "smooth",
+      "layer" : 15,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0.0, "37.35%+-24.0px" ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 249.60, 100.0 ],
+      "text" : "说明：该场景展示了滑动条控件，可使用滑动条控件进行一定范围内的属性设置。",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "main" : {
+      "absorbs_input" : true,
+      "always_accepts_input" : false,
+      "controls" : [
+         {
+            "sliderPanel@SliderDemo.sliderPanel" : {}
+         }
+      ],
+      "force_render_below" : false,
+      "is_showing_menu" : true,
+      "render_game_behind" : true,
+      "render_only_when_topmost" : true,
+      "should_steal_mouse" : false,
+      "type" : "screen"
+   },
+   "namespace" : "SliderDemo",
+   "slider0@common.slider" : {
+      "$progress_default_clip_direction" : "up",
+      "$progress_hover_clip_direction" : "up",
+      "$slider_direction" : "vertical",
+      "$slider_name" : "#SliderDemoScreen.OnAbsSliderChange",
+      "$slider_steps_binding_name" : "#SliderDemoScreen.ReturnAbsSliderStep",
+      "$slider_tts_text_value" : "#netease_tts_text_value",
+      "$slider_value_binding_name" : "#SliderDemoScreen.ReturnAbsSliderValue",
+      "offset" : [ -70, -50 ],
+      "size" : [ 10, 100 ],
+      "$slider_step_factory_control_ids": {
+         "slider_step": "@common.slider_step",
+         "slider_step_hover": "@common.slider_step_hover",
+         "slider_step_progress": "@common.slider_step_progress",
+         "slider_step_progress_hover": "@common.slider_step_progress_hover"
+      }
+   },
+   "spilt0@common.slider_step": {
+      "size": [ 6, 2 ]
+   },
+   "spilt0Over@common.slider_step_hover": {
+      "size": [ 6, 2 ]
+   },
+   "spilt0Progress@common.slider_step_progress": {
+      "size": [ 6, 2 ]
+   },
+   "spilt0ProgressHover@common.slider_step_progress_hover": {
+      "size": [ 6, 2 ]
+   },
+   "slider1@common.slider" : {
+      "$background_default_control" : "SliderDemo.SfxItem",
+      "$background_hover_control" : "SliderDemo.SfxItem",
+      "$slider_box_size" : [ 10, 35 ],
+      "$slider_name" : "#SliderDemoScreen.OnSliderChange",
+      "$slider_steps_binding_name" : "#SliderDemoScreen.ReturnSliderStep",
+      "$slider_tts_text_value" : "#netease_tts_text_value",
+      "$slider_value_binding_name" : "#SliderDemoScreen.ReturnSliderValue",
+      "offset" : [ 70, -50 ],
+      "size" : [ 100, 32 ]
+   },
+   "img_animation": {
+      "anim_type": "flip_book",
+      "initial_uv": [ 0, 0 ],
+      "frame_count": 36,
+      "frame_step": 1,
+      "fps": 10,
+      "reversible": false,
+      "easing": "linear"
+    },
+   "SfxItem" : {
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "texture" : "textures/ui/my_eating_apple",
+      "type" : "image",
+      "uv" : "@SliderDemo.img_animation",
+	  "disable_anim_fast_forward": true,
+      "size": [ 100, 32 ],
+      "uv_size" : [ 64, 64 ],
+      "visible" : true
+   },
+   "sliderPanel" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "label7@SliderDemo.label7" : {}
+         },
+         {
+            "slider0@SliderDemo.slider0" : {}
+         },
+         {
+            "slider1@SliderDemo.slider1" : {}
+         },
+         {
+            "slider_label0@SliderDemo.slider_label0" : {}
+         },
+         {
+            "slider_label1@SliderDemo.slider_label1" : {}
+         },
+         {
+            "ExitButton@DollDemo.ExitButton" : {}
+         }
+      ],
+      "enabled" : true,
+      "layer" : 12,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0, 0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+      "type" : "panel",
+      "visible" : true
+   },
+   "slider_label0" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1, 1, 1 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "large",
+      "font_type" : "smooth",
+      "layer" : 15,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ -70, -70 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 249.60, 100.0 ],
+      "text" : "5.0",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "slider_label1" : {
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1, 1, 1 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "large",
+      "font_type" : "smooth",
+      "layer" : 15,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 70, -70 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : true,
+      "size" : [ 249.60, 100.0 ],
+      "text" : "0.5",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   }
+}

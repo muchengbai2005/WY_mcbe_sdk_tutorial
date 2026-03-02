@@ -1,0 +1,18 @@
+{
+    "format_version": "1.14.0", 
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm111_ocean", 
+            "inherits": "ocean"
+        }, 
+        "components": {
+            "minecraft:overworld_generation_rules": {
+                "hills_transformation": "dm111_deep_ocean", 
+                "generate_for_climates": [
+                    ["medium", 1]
+                ]
+            },
+            "dm111": {}
+        }
+    }
+}

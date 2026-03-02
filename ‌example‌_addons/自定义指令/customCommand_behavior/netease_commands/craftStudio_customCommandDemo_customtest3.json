@@ -1,0 +1,21 @@
+{
+    "format_version": "0.0.1",
+    "name": "customtest3",
+    "description": "测试自定义指令3.3更新",
+    "permission_level": "any",
+	"requires_cheats": false,
+    "args": [
+        {"name":"枚举", "type":"enum", "options": ["get"]},
+        {"name":"枚举2", "type":"enum_short", "options": ["apple", "banana"]},
+		{"name":"方块", "type":"block"},
+        {"name":"附魔", "type":"enchant"},
+        {"name":"维度", "type":"dimension"}
+    ],
+	"args1": [
+        {"name":"枚举", "type":"enum", "options": ["set"]},
+        {"name":"枚举2", "type":"enum_short", "options": ["apple", "banana"]},
+        {"name":"群系", "type":"biome"},
+        {"name":"结构", "type":"structure"},
+        {"name":"状态效果", "type":"effect"}
+    ]
+}

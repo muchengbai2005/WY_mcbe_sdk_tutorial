@@ -1,0 +1,53 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+#include "entityFragmentUtil.h"
+#line 4
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+LAYOUT_BINDING(1) uniform sampler2D TEXTURE_1;
+#if defined(USE_MULTITEXTURE) || defined(GLINT_BLEND_BLOOM)
+LAYOUT_BINDING(2) uniform sampler2D TEXTURE_2;
+#endif
+// LAYOUT_BINDING(3) uniform sampler2D TEXTURE_3;
+
+#if defined(GLINT) && defined(USE_BLOOM)
+#define GLINT_BLEND_BLOOM
+#endif
+
+varying vec4 light;
+varying vec4 fogColor;
+
+uniform vec4 EXTRA_ACTOR_UNIFORM1;
+
+void main() {
+	vec4 color = getSampledColor(TEXTURE_0, uv);
+
+#if defined(USE_MULTITEXTURE) || defined(GLINT_BLEND_BLOOM)
+	entityCommonFrag(color, TEXTURE_0, TEXTURE_1, TEXTURE_2);
+#else
+	entityCommonFrag(color, TEXTURE_0, TEXTURE_1);
+#endif
+
+	// lighting
+#ifdef GLINT_BLEND_BLOOM
+	lowp float emissive = getEmissive(TEXTURE_2, uv);
+#else
+	lowp float emissive = getEmissive(TEXTURE_1, uv);
+#endif
+
+#ifdef USE_EMISSIVE
+	//make glowy stuff
+	color *= mix(vec4(1.0), light, color.a);
+#else
+	color.rgb *= (emissive < 0.1) ? light.rgb : vec3(emissive);
+#endif
+
+	applyOverlayColor(color);
+
+	applyGlint(TEXTURE_1, color);
+
+	//apply fog
+	applyFog(color, fogColor);
+
+	gl_FragColor = color * vec4(3.0, 0.5, 1.2, 1.0);
+}

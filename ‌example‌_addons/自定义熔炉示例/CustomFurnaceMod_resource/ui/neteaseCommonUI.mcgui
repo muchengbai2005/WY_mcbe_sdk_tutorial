@@ -1,0 +1,16 @@
+{
+   "AutoControlLayer" : false,
+   "Version" : "0.1.0",
+   "children" : [],
+   "mCanPrefab" : true,
+   "mCurrent" : "",
+   "mName" : "neteaseCommonUI",
+   "mPath" : "namespace",
+   "mRefName" : "",
+   "mRefNamespace" : "",
+   "mRefValue" : null,
+   "mScreenConnectControllerPath" : "",
+   "mScreenConnectScreen" : "",
+   "mTemplate" : "namespace",
+   "properties" : {}
+}

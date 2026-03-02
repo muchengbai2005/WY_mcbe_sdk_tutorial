@@ -1,0 +1,72 @@
+{
+   "button_label" : {
+      "$label_color|default" : [ 1, 1, 1 ],
+      "$label_font_size|default" : "normal",
+      "$label_layer|default" : 1,
+      "$label_offset|default" : [ 0, 0 ],
+      "$label_text|default" : "",
+      "color" : "$label_color",
+      "font_size" : "$label_font_size",
+      "font_type" : "smooth",
+      "layer" : "$label_layer",
+      "max_size" : [ "100%", "100%" ],
+      "offset" : "$label_offset",
+      "shadow" : false,
+      "text" : "$label_text",
+      "text_alignment" : "center",
+      "type" : "label"
+   },
+   "default" : {
+      "$label_color" : "$default_text_color",
+      "$nineslice_size|default" : 0,
+      "controls" : [
+         {
+            "label@UIDemoCommon.button_label" : {}
+         }
+      ],
+      "layer" : "$texture_layer",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$default_texture",
+      "type" : "image"
+   },
+   "hover" : {
+      "$label_color" : "$hover_text_color",
+      "$nineslice_size|default" : 0,
+      "controls" : [
+         {
+            "label@UIDemoCommon.button_label" : {}
+         }
+      ],
+      "layer" : "$texture_layer",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$hover_texture",
+      "type" : "image"
+   },
+   "locked" : {
+      "$label_color" : "$locked_text_color",
+      "$nineslice_size|default" : 0,
+      "controls" : [
+         {
+            "label@UIDemoCommon.button_label" : {}
+         }
+      ],
+      "layer" : "$texture_layer",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$locked_texture",
+      "type" : "image"
+   },
+   "namespace" : "UIDemoCommon",
+   "pressed" : {
+      "$label_color" : "$pressed_text_color",
+      "$nineslice_size|default" : 0,
+      "controls" : [
+         {
+            "label@UIDemoCommon.button_label" : {}
+         }
+      ],
+      "layer" : "$texture_layer",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$pressed_texture",
+      "type" : "image"
+   }
+}

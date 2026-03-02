@@ -1,0 +1,403 @@
+{   
+    // 后处理渲染顺序
+    "render_order": [
+    // 以下为官方自带后处理
+    "bloom",
+    "lensflare",
+    "depthoffield",
+    "gaussianblur",
+    "coloradjustment",
+    "vignette",
+    "lensstain",
+
+    // 开发者的自定义后处理在下面添加
+    "oldtvDemo",
+    "scanmapDemo",
+    "lensstainCustomDemo"
+    ],
+    "process_array": [
+        // *******************  以下为官方后处理的定义 ******************* //
+        {
+            "name": "bloom",
+            "paras":{
+                "threshold":0.5,
+                "intensity":1.0,
+                "radius":1.0
+            },
+            "enable": true,
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    },
+                    "material":"threashold_pick",
+                    "shaderPassName":"ThreasholdPick"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":0.5,
+                        "height":0.5
+                    }
+                    ,
+                    "material":"daul_blur_down",
+                    "shaderPassName":"DownScalePass"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":0.25,
+                        "height":0.25
+                    }
+                    ,
+                    "material":"daul_blur_down",
+                    "shaderPassName":"DownScalePass"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":0.125,
+                        "height":0.125
+                    }
+                    ,
+                    "material":"daul_blur_down",
+                    "shaderPassName":"DownScalePass"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":0.0625,
+                        "height":0.0625
+                    }
+                    ,
+                    "material":"daul_blur_down",
+                    "shaderPassName":"DownScalePass"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":0.125,
+                        "height":0.125
+                    }
+                    ,
+                    "material":"daul_blur_up",
+                    "shaderPassName":"UpScalePass"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":0.25,
+                        "height":0.25
+                    }
+                    ,
+                    
+                    "material":"daul_blur_up",
+                    "shaderPassName":"UpScalePass"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":0.5,
+                        "height":0.5
+                    }
+                    ,
+                    
+                    "material":"daul_blur_up",
+                    "shaderPassName":"UpScalePass"
+                }
+                ,
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    }
+                    ,
+                    
+                    "material":"daul_blur_up_blend",
+                    "shaderPassName":"UpScalePass"
+                }
+            ]
+        },
+        {
+            "name": "lensflare",
+            "enable": false
+        },
+        {
+            "name": "vignette",
+            "paras":{
+                "color":[0.0, 0.0, 0.0, 1.0],
+                "center": [0.5, 0.5],
+                "radius": 0.5,
+                "smoothness": 0.02
+            },
+            "enable":false,
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    },
+                    
+                    "material":"vignette"
+                }
+            ]
+        },
+        {
+            "name": "gaussianblur",
+            "paras":{
+                "radius":1.0
+            },
+            "enable":false,
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":0.5,
+                        "height":0.5
+                    },
+                    
+                    "material":"gaussianblur_horizontal",
+                    "shaderPassName":"DownScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.25,
+                        "height":0.25
+                    },
+                    
+                    "material":"gaussianblur_horizontal",
+                    "shaderPassName":"DownScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.125,
+                        "height":0.125
+                    },
+                    
+                    "material":"gaussianblur_horizontal",
+                    "shaderPassName":"DownScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.25,
+                        "height":0.25
+                    },
+                    
+                    "material":"gaussianblur_vertical",
+                    "shaderPassName":"UpScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.5,
+                        "height":0.5
+                    },
+                    
+                    "material":"gaussianblur_vertical",
+                    "shaderPassName":"UpScalePass"
+                },
+                {
+                     "render_target":{
+                         "width":1.0,
+                         "height":1.0
+                     },
+                    
+                     "material":"gaussianblur_vertical",
+                     "shaderPassName":"UpScalePass"
+                }
+            ]
+        },
+        {
+            "name": "coloradjustment",
+            "paras":{
+                "brightness":1.0,
+                "contrast":1.0,
+                "saturation":1.0,
+                "intensity":1.0,
+                "colorTint":[1.0,1.0,1.0,1.0]
+            },
+            "enable":false,
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    },
+                    
+                    "material":"color_adjustment_BSC"
+                }
+            ]
+        },
+        {
+            "name": "lensstain",
+            "paras":{
+              "intensity":0.5,
+              "dirtColor":[1.0, 0.87, 0.69, 1.0],
+              "dirtColotIntensity":1.0
+            },
+            "enable":false,
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    },
+                    
+                    "material":"lens_stain",
+
+                    "bindTexture":[
+                        {
+                            "texture": "textures/postprocess/default_dirtiness"
+                        }
+                     ]
+                }
+            ]
+        },
+        {
+            "name": "depthoffield",
+            "paras":{
+              "focus":2,
+              "nearBlurScale":0.10,
+              "farBlurScale":6.00,
+              "blurRaidus":0.4,
+              "useAuto": 0.0
+            },
+            "enable":false,
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":0.5,
+                        "height":0.5
+                    },
+                    
+                    "material":"dual_kawase_blur_ds",
+                    "shaderPassName":"DownScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.25,
+                        "height":0.25
+                    },
+                    
+                    "material":"dual_kawase_blur_ds",
+                    "shaderPassName":"DownScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.125,
+                        "height":0.125
+                    },
+                    
+                    "material":"dual_kawase_blur_ds",
+                    "shaderPassName":"DownScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.25,
+                        "height":0.25
+                    },
+                    
+                    "material":"dual_kawase_blur_us",
+                    "shaderPassName":"UpScalePass"
+                },
+                {
+                    "render_target":{
+                        "width":0.5,
+                        "height":0.5
+                    },
+                    
+                    "material":"dual_kawase_blur_us",
+                    "shaderPassName":"UpScalePass"
+                },
+                {
+                     "render_target":{
+                         "width":1.0,
+                         "height":1.0
+                     },
+                    
+                     "material":"depth_sample_with_blur",
+                     "shaderPassName":"UpScalePass"
+                }
+            ]
+        },
+
+         // *******************  以下为开发者自定义后处理的定义 ******************* //
+        {
+            "name": "oldtvDemo",
+            "enable": false,
+            "paras": [
+                { "name": "density", "value": 0.1, "range": [0.0, 1.0] },
+                { "name": "strength", "value": 1.0, "range": [0.0, 1.0] },
+                { "name": "snow_size", "value": 2.0, "range": [0.5, 16.0] },
+                { "name": "noise_fps", "value": 6.0, "range": [0.01, 64.0] },
+                { "name": "black_zone", "value": 0.2, "range": [0.0, 1.0] }
+            ],
+            "pass_array":[
+                // 该后处理拥有一个pass，下面定义了该pass所使用的的renderTarget大小，以及所使用的材质，材质定义见materials/postprocess.material
+                // 可根据需要添加多个pass，详细可见：https://mc.163.com/dev/mcmanual/mc-dev/mcguide/16-美术/7-材质与着色器/4-材质实战.html
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    },
+                    "material":"oldtvDemoMat"
+                }
+            ]
+        },
+        {
+            "name": "scanmapDemo",
+            "enable": false,
+            "paras": [
+                { "name": "red", "value": 1.0, "range": [0.0, 1.0] },
+                { "name": "green", "value": 1.0, "range": [0.0, 1.0] },
+                { "name": "blue", "value": 1.0, "range": [0.0, 1.0] },
+                { "name": "freq", "value": 2.0, "range": [0.0, 10.0] }
+            ],
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    },
+                    "material":"scanmapDemoMat",
+                    // 该pass需要使用深度图，深度图固定绑定TEXTURE_2，因此请在fragment shader中使用TEXTURE_2来使用这张深度图。
+                    "depth_enable": true
+                }
+            ]
+        },
+        {
+            "name": "lensstainCustomDemo",
+            "paras":[
+                { "name": "intensity", "value": 0.5, "range": [0.0, 1.0] },
+                { "name": "dirtColotIntensity", "value": 2.0, "range": [0.5, 16.0] },
+                { "name": "blend", "value": 0.0, "range": [0.0, 1.0] },
+                { "name": "pass", "value": 0.0, "range": [0.0, 1.0] },
+                { "name": "dirtColorR", "value": 1.0, "range": [0.0, 1.0] },
+                { "name": "dirtColorG", "value": 0.87, "range": [0.0, 1.0] },
+                { "name": "dirtColorB", "value": 0.69, "range": [0.0, 1.0] },
+                { "name": "dirtColorA", "value": 1.0, "range": [0.0, 1.0] }
+                
+            ],
+            "enable":false,
+            "pass_array":[
+                {
+                    "render_target":{
+                        "width":1.0,
+                        "height":1.0
+                    },
+                    
+                    "material":"lensstainCustomDemoMat",
+                    "depth_enable": true, //depth_enable为true时，bindTexture的贴图从3号纹理单元开始绑定。false则从2号纹理单元开始绑定。
+                    "bindTexture":[
+                        {
+                            "texture": "textures/postprocess/lensstainCustomDemo_bindTexture0"
+                        },
+                        {
+                            "texture": "textures/postprocess/lensstainCustomDemo_bindTexture1"
+                        }
+                     ]
+                }
+            ]
+        }
+    ]
+
+}

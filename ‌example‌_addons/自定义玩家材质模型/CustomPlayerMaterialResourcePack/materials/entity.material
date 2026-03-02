@@ -1,0 +1,19 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "custom_player_default:entity_alphatest": {
+      "fragmentShader": "shaders/custom_entity1.fragment",
+      "+samplerStates": [
+        {
+          "samplerIndex": 1,
+          "textureFilter": "Point"
+        }
+      ],
+      "msaaSupport": "Both"
+    },
+    "custom_entity:entity_alphatest": {
+      "fragmentShader": "shaders/custom_entity2.fragment",
+      "msaaSupport": "Both"
+    }
+  }
+}

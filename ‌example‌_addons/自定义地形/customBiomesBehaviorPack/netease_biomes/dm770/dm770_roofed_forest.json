@@ -1,0 +1,19 @@
+{
+    "format_version": "1.14.0", 
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm770_roofed_forest", 
+            "inherits": "roofed_forest"
+        }, 
+        "components": {
+            "minecraft:overworld_generation_rules": {
+                "hills_transformation": "dm770_plains", 
+                "mutate_transformation": "dm770_roofed_forest_mutated", 
+                "generate_for_climates": [
+                    ["medium", 1]
+                ]
+            },
+            "dm770": {}
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "pools": [
+        {
+            "rolls": 1,  // 抽取次数
+            "entries": [
+                {
+                    "type": "item",  // 掉落类型
+                    "name": "minecraft:book",  // 物品名称
+                    "weight": 15,  // 权重
+                    "functions": [
+                        {
+                            // 获取指定等级附魔物品函数
+                            "function": "enchant_with_levels",
+                            // 附魔等级
+                            "levels": 2,
+                            // 物品是否能被附上宝藏附魔("is_lootable")，默认为false
+                            "treasure": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

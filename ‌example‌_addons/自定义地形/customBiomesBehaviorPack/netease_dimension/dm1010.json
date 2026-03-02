@@ -1,0 +1,16 @@
+{
+  "format_version": "1.14.0",
+  "netease:dimension_info": {
+    "components": {
+      "netease:dimension_type": "minecraft:overworld", //维度类型，当前自定义群系源只支持minecraft:overworld
+      "netease:biome_source":[ //群系源配置，有此参数则代表使用自定义群系布局，netease:biome_source是一个数组，数组中的每个元素代表一个阶段，每个阶段会有不同的type，通过不同的type相互协作，来共同创造千变万化的群系
+        {
+          "type":"random_with_weight",  //在16*16的区域内将一些坐标点根据pool中的元素进行填充，weight可以改变该群系出现的比例
+          "pool":[
+            {"biome_type":"dm1010_plains", "weight": 1}
+          ]
+        }
+      ]
+    }
+  }
+}

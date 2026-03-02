@@ -1,0 +1,231 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "panel" : {
+               "controls" : [
+                  {
+                     "button@common.button" : {
+                        "$control_alpha" : 1.0,
+                        "$default_texture" : "textures/netease/common/button/default",
+                        "$hover_texture" : "textures/netease/common/button/hover",
+                        "$is_new_nine_slice" : false,
+                        "$label_color" : [ 1, 1, 1 ],
+                        "$label_font_scale_factor" : 1.0,
+                        "$label_font_size" : "large",
+                        "$label_layer" : 3,
+                        "$label_offset" : [ 0, 0 ],
+                        "$label_text" : "关闭",
+                        "$nine_slice_buttom" : 0,
+                        "$nine_slice_left" : 0,
+                        "$nine_slice_right" : 0,
+                        "$nine_slice_top" : 0,
+                        "$nineslice_size" : [ 0, 0, 0, 0 ],
+                        "$pressed_button_name" : "%netease_editor_template_namespace.click",
+                        "$pressed_texture" : "textures/netease/common/button/pressed",
+                        "$texture_layer" : 2,
+                        "anchor_from" : "bottom_middle",
+                        "anchor_to" : "bottom_middle",
+                        "bindings" : [
+                           {
+                              "binding_collection_name" : "",
+                              "binding_condition" : "always_when_visible",
+                              "binding_type" : "collection_details"
+                           }
+                        ],
+                        "button_mappings" : [],
+                        "controls" : [
+                           {
+                              "default@netease_editor_template_namespace.default" : {}
+                           },
+                           {
+                              "hover@netease_editor_template_namespace.hover" : {}
+                           },
+                           {
+                              "pressed@netease_editor_template_namespace.pressed" : {}
+                           },
+                           {
+                              "button_label@netease_editor_template_namespace.button_label" : {}
+                           }
+                        ],
+                        "default_control" : "default",
+                        "hover_control" : "hover",
+                        "is_handle_button_move_event" : true,
+                        "offset" : [ 0, 0 ],
+                        "pressed_control" : "pressed",
+                        "priority" : 9,
+                        "size" : [ "14.0%+0.0px", "15.0%+0.0px" ],
+                        "type" : "button"
+                     }
+                  },
+                  {
+                     "entity_input_panel" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "button_mappings" : [
+                           {
+                              "from_button_id" : "button.menu_select",
+                              "mapping_type" : "pressed",
+							  "to_button_id" : "button.turn_doll"
+                           }
+                        ],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "top_left",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 1.0, 1.0, 1.0 ],
+                                 "enabled" : false,
+                                 "fill" : true,
+                                 "grayscale" : true,
+                                 "layer" : 1,
+                                 "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                                 "texture" : "textures/colormap/birch",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "entity_paper_doll" : {
+                                 "layer" : 2,
+                                 "renderer" : "netease_paper_doll_renderer",
+								 "rotation" : "freedom_gesture",
+								 "bindings" : [
+									 {
+										"binding_type" : "view",
+										"source_control_name" : "entity_input_panel",
+										"source_property_name" : "#gesture_delta_source",
+										"target_property_name" : "#gesture_delta_source"
+									 },
+									 {
+										"binding_type" : "view",
+										"source_control_name" : "entity_input_panel",
+										"source_property_name" : "#gesture_mouse_delta_x",
+										"target_property_name" : "#gesture_mouse_delta_x"
+									 },
+									 {
+										"binding_type" : "view",
+										"source_control_name" : "entity_input_panel",
+										"source_property_name" : "#gesture_mouse_delta_y",
+										"target_property_name" : "#gesture_mouse_delta_y"
+									 }
+								  ],
+                                 "rotation" : "freedom_gesture",
+                                 "screen_scale" : 1.0,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "custom"
+                              }
+                           }
+                        ],
+                        "layer" : 6,
+                        "modal" : true,
+                        "offset" : [ 0, 0 ],
+                        "size" : [ "32.0%+0.0px", "85.0%+0.0px" ],
+                        "type" : "input_panel"
+                     }
+                  },
+                  {
+                     "skeleton_input_panel" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "button_mappings" : [
+                           {
+                              "from_button_id" : "button.menu_select",
+                              "mapping_type" : "pressed",
+                              "to_button_id" : "#netease_to_button_id"
+                           }
+                        ],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "top_left",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 1.0, 1.0, 1.0 ],
+                                 "enabled" : false,
+                                 "fill" : true,
+                                 "grayscale" : true,
+                                 "layer" : 1,
+                                 "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                                 "texture" : "textures/colormap/birch",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "skeleton_paper_doll" : {
+                                 "layer" : 2,
+                                 "renderer" : "netease_paper_doll_renderer",
+                                 "rotation" : "gesture_x",
+                                 "screen_scale" : 1.0,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "custom"
+                              }
+                           }
+                        ],
+                        "layer" : 15,
+                        "modal" : true,
+                        "offset" : [ "34.2%+0.0px", 0 ],
+                        "size" : [ "32.0%+0.0px", "85.0%+0.0px" ],
+                        "type" : "input_panel"
+                     }
+                  },
+                  {
+                     "block_input_panel" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_left",
+                        "button_mappings" : [
+                           {
+                              "from_button_id" : "button.menu_select",
+                              "mapping_type" : "pressed",
+                              "to_button_id" : "#netease_to_button_id"
+                           }
+                        ],
+                        "controls" : [
+                           {
+                              "bg" : {
+                                 "anchor_from" : "top_left",
+                                 "anchor_to" : "top_left",
+                                 "clip_direction" : "left",
+                                 "clip_ratio" : 0.0,
+                                 "color" : [ 1.0, 1.0, 1.0 ],
+                                 "enabled" : false,
+                                 "fill" : true,
+                                 "grayscale" : true,
+                                 "layer" : 1,
+                                 "size" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+                                 "texture" : "textures/colormap/birch",
+                                 "type" : "image"
+                              }
+                           },
+                           {
+                              "block_paper_doll" : {
+                                 "layer" : 2,
+                                 "renderer" : "netease_paper_doll_renderer",
+                                 "rotation" : "gesture_x",
+                                 "screen_scale" : 1.0,
+                                 "size" : [ 100, 100 ],
+                                 "type" : "custom"
+                              }
+                           }
+                        ],
+                        "layer" : 18,
+                        "modal" : true,
+                        "offset" : [ "68.0%+0.0px", 0 ],
+                        "size" : [ "32.0%+0.0px", "85.0%+0.0px" ],
+                        "type" : "input_panel"
+                     }
+                  }
+               ],
+               "layer" : 6,
+               "offset" : [ 0, -20 ],
+               "size" : [ 500, 200 ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "NeteasePaperDoll1111111111111111111"
+}

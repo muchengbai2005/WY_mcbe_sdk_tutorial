@@ -1,0 +1,15 @@
+{
+    "format_version": "0.0.1",
+    "name": "customtest",
+    "description": "测试自定义指令的所有参数",
+    "args": [
+        {"name":"整数", "type":"int"},
+        {"name":"浮点数", "type":"float"},
+		{"name":"布尔值", "type":"bool"},
+        {"name":"字符串", "type":"str"},
+        {"name":"目标", "type":"target"},
+        {"name":"位置", "type":"pos"},
+        {"name":"实体", "type":"entity"},
+        {"name":"物品", "type":"item"}
+    ]
+}

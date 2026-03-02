@@ -1,0 +1,17 @@
+{
+    // 每过一段时间在玩家周围落雷在玩家附近落雷
+    "netease:enchant": {
+      "identifier": "demoenchant:customenchant2",
+      "description": "enchantment.customenchant2",
+      "primary_slots": ["armor_head"],
+      "cost": [1, 3, 5],
+
+      "frequency": "uncommon",
+      "is_treasure_only": false,
+      "is_discoverable": true,
+      "is_lootable": true,
+      "is_curse": false,
+      "max_level": 3,
+      "incompatible": ["unbreaking"]
+    }
+  }

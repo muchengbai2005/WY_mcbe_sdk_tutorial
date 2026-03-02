@@ -1,0 +1,37 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+
+#include "fragmentVersionCentroidUV.h"
+
+#include "util.h"
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+LAYOUT_BINDING(2) uniform sampler2D TEXTURE_3;
+LAYOUT_BINDING(2) uniform sampler2D TEXTURE_4;
+
+uniform vec4 EXTRA_VECTOR1; // { intensity, colorIntensity , sample texture blend， time}
+uniform vec4 EXTRA_VECTOR2; // {  dirColor }
+
+vec4 len_stain(vec4 color)
+{ 
+    float intensity =EXTRA_VECTOR1.x;
+    //vec4 color = texture(TEXTURE_0, uv);
+    float blended = EXTRA_VECTOR1.z;
+    vec4 blendColor1 = texture(TEXTURE_3, vec2(uv.x, 1.0 - uv.y));
+    vec4 blendColor2 = texture(TEXTURE_4, vec2(uv.x, 1.0 - uv.y));
+    vec4 blendColor = mix(blendColor1, blendColor2, blended);
+    float dirColorIntensity = EXTRA_VECTOR1.y;
+    vec3 dirtColor = EXTRA_VECTOR2.rgb;
+    blendColor = vec4(mix(blendColor.rgb, blendColor.rgb * dirtColor.rgb, dirColorIntensity), blendColor.a);
+    float blend = step(blendColor.a, 0.01);
+    vec4 finalColor = color*blend + (1.0-blend)*mix(color, blendColor, intensity);
+	return finalColor;
+}
+
+void main(){
+    vec4 color = texture(TEXTURE_0, uv);
+    
+    gl_FragColor = len_stain(color);
+
+}

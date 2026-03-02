@@ -1,0 +1,17 @@
+{
+    //常驻类型附魔：跑步变快，重力变小
+    "netease:enchant": {
+      "identifier": "demoenchant:customenchant1",
+      "description": "enchantment.customenchant1",
+      "primary_slots": ["armor_feet"],
+      "cost": [1, 3],
+
+      "frequency": "common",
+      "is_treasure_only": false,
+      "is_discoverable": true,
+      "is_lootable": true,
+      "is_curse": false,
+      "max_level": 2,
+      "incompatible": ["unbreaking"]
+    }
+  }

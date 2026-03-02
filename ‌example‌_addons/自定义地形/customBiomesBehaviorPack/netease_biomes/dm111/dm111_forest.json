@@ -1,0 +1,20 @@
+{
+    "format_version": "1.14.0", 
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm111_forest", 
+            "inherits": "forest"
+        }, 
+        "components": {
+            "minecraft:overworld_generation_rules": {
+                "hills_transformation": "dm111_forest_hills", 
+                "mutate_transformation": "dm111_flower_forest", 
+                "generate_for_climates": [
+                    ["medium", 1], 
+                    ["cold", 1]
+                ]
+            },
+            "dm111": {}
+        }
+    }
+}

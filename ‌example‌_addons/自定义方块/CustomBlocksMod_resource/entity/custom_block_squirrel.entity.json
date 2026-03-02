@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+       // 自定义方块实体的identitfier
+       "identifier": "customblocks:custom_block_squirrel",
+       // 指定使用的实体模型
+      "geometry": {
+        "default": "geometry.squirrel"
+      },
+       // 指定使用的模型贴图
+      "textures": {
+				"red": "textures/entity/squirrel/red"
+			},
+       // 指定使用的模型材质
+	     "materials": {
+				"red": "entity_alphatest"
+      },
+       // 指定使用的模型渲染控制器
+      "render_controllers": [ "controller.render.squirrel" ],
+      "scripts": {
+        // 实体模型的缩放值
+        "scale": "0.9375",
+        // 实体Molang变量初始化，用于切换动画状态
+        "initialize": [
+          "variable.mod_is_moving = 2.0;"
+        ],
+        // 运行的动画，"general"为我们创建的自定义动画控制器，表示该模型会一直运行该动画控制器。
+        "animate": [
+          "general"
+        ]
+      },
+      // 该模型包含的动画，"general"为动画控制器，定义在resource_pack/animations_controllers目录下
+      // "move","idle","look_at_target"为动画，定义在resource_pack/animations目录下
+      "animations": {
+				"move": "animation.squirrel.move",
+				"idle": "animation.squirrel.idle",
+        "general": "controller.animation.squirrel.general"
+			},
+      // 该模型所包含的微软原版粒子
+      "particle_effects": { 
+        "headsmoke":  "minecraft:water_fog"
+      },
+      // 该模型所包含的自定义音效
+      "sound_effects": {
+        "thunder": "squirrel.idle.thunder" 
+      }
+    }
+  }
+}

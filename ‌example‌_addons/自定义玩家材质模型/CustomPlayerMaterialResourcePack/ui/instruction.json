@@ -1,0 +1,29 @@
+{
+   "main" : {
+      "controls" : [
+         {
+            "panel" : {
+               "controls" : [
+                  {
+                     "label" : {
+                        "color" : [ 1.0, 0.0, 0.0 ],
+                        "font_type" : "default",
+                        "layer" : 1,
+                        "offset" : [ -0.50, 8.50 ],
+                        "size" : [ 96, 100 ],
+                        "text" : "操作指南：\n聊天框输入\"change\"改变玩家材质，再次输入\"change\"恢复原来的材质\n玩家使用物品栏物品改变玩家渲染及动画表现",
+                        "type" : "label"
+                     }
+                  }
+               ],
+               "layer" : 1,
+               "offset" : [ -186.0, -88.0 ],
+               "size" : [ 132, 96 ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "type" : "screen"
+   },
+   "namespace" : "instruction"
+}

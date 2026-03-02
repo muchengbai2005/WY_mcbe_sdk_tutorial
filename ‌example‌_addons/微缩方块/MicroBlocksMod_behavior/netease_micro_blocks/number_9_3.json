@@ -1,0 +1,9 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "micro_block:number_9_3",
+            "micro_size": "1 1 1"
+        }
+    }
+}

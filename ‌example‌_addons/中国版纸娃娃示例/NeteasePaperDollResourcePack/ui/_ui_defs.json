@@ -1,0 +1,8 @@
+{
+    "ui_defs": [
+        "ui/Gate.json",
+        "ui/NeteasePaperDoll.json",
+        "ui/新文件.json",
+        "ui/netease_editor_template_namespace.json"
+    ]
+}

@@ -1,0 +1,1232 @@
+{
+   "main" : {
+      "absorbs_input" : true,
+      "always_accepts_input" : false,
+      "controls" : [
+         {
+            "alphaBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "透明度",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "clipBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "裁剪",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 30 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "colorBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "颜色",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 60 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "flipbookBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "序列帧",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 90 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "offsetBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "位移",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 120 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "sizeBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "尺寸",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 150 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "uvBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "UV",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 180 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "normalBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "无动画",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_left",
+               "anchor_to" : "top_left",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 210 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 60, 30 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "closeBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "关闭",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "top_right",
+               "anchor_to" : "top_right",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 75, 37 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "resetBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "重置动画",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "bottom_right",
+               "anchor_to" : "bottom_right",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 75, 37 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "resumeBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "继续播放",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "bottom_right",
+               "anchor_to" : "bottom_right",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, -40 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 75, 37 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "pauseBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "暂停播放",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "bottom_right",
+               "anchor_to" : "bottom_right",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, -80 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 75, 37 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "setAnimationBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "添加动画",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "bottom_right",
+               "anchor_to" : "bottom_right",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, -160 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 75, 37 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "removeAnimationBtn@common.button" : {
+               "$control_alpha" : 1.0,
+               "$default_texture" : "textures/netease/common/button/default",
+               "$hover_texture" : "textures/netease/common/button/hover",
+               "$is_new_nine_slice" : false,
+               "$label_color" : [ 1, 1, 1 ],
+               "$label_font_scale_factor" : 1.0,
+               "$label_font_size" : "large",
+               "$label_layer" : 3,
+               "$label_offset" : [ 0, 0 ],
+               "$label_text" : "删除动画",
+               "$nine_slice_buttom" : 0,
+               "$nine_slice_left" : 0,
+               "$nine_slice_right" : 0,
+               "$nine_slice_top" : 0,
+               "$nineslice_size" : [ 0, 0, 0, 0 ],
+               "$pressed_button_name" : "%netease_editor_template_namespace.click",
+               "$pressed_texture" : "textures/netease/common/button/pressed",
+               "$texture_layer" : 2,
+               "alpha" : 1.0,
+               "anchor_from" : "bottom_right",
+               "anchor_to" : "bottom_right",
+               "bindings" : [
+                  {
+                     "binding_collection_name" : "",
+                     "binding_condition" : "always_when_visible",
+                     "binding_type" : "collection_details"
+                  }
+               ],
+               "button_mappings" : [],
+               "clip_offset" : [ 0, 0 ],
+               "clips_children" : false,
+               "controls" : [
+                  {
+                     "default@netease_editor_template_namespace.default" : {}
+                  },
+                  {
+                     "hover@netease_editor_template_namespace.hover" : {}
+                  },
+                  {
+                     "pressed@netease_editor_template_namespace.pressed" : {}
+                  },
+                  {
+                     "button_label@netease_editor_template_namespace.button_label" : {}
+                  }
+               ],
+               "default_control" : "default",
+               "draggable" : "not_draggable",
+               "enabled" : true,
+               "hover_control" : "hover",
+               "is_handle_button_move_event" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "offset" : [ 0, -120 ],
+               "pressed_control" : "pressed",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 75, 37 ],
+               "type" : "button",
+               "visible" : true
+            }
+         },
+         {
+            "alphaImg" : {
+               "alpha" : "@show_alpha_ani",
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : 0.0,
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 100, 100 ],
+               "texture" : "textures/netease/common/image/default",
+               "type" : "image",
+               "uv" : [ 0, 0 ],
+               "uv_size" : [ 0, 0 ],
+               "visible" : true
+            }
+         },
+         {
+            "clipImg" : {
+               "alpha" : 1.0,
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : {
+                  "anim_type" : "clip",
+                  "duration" : 1.0,
+                  "from" : 0.0,
+                  "to" : 1.0
+               },
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 100, 100 ],
+               "texture" : "textures/netease/common/image/default",
+               "type" : "image",
+               "uv" : [ 0, 0 ],
+               "uv_size" : [ 0, 0 ],
+               "visible" : false
+            }
+         },
+         {
+            "colorImg" : {
+               "alpha" : 1.0,
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : 0.0,
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "color": "@color_ani",
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 100, 100 ],
+               "texture" : "textures/netease/common/image/default",
+               "type" : "image",
+               "uv" : [ 0, 0 ],
+               "uv_size" : [ 0, 0 ],
+               "visible" : false
+            }
+         },
+         {
+            "flipbookImg" : {
+               "alpha" : 1.0,
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : 0.0,
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 100, 100 ],
+               "texture" : "textures/ui/my_eating_apple",
+               "type" : "image",
+               "uv" : "@flipbook_ani",
+               "uv_size" : [ 64.0, 64.0 ],
+               "visible" : false
+            }
+         },
+         {
+            "offsetImg" : {
+               "alpha" : 1.0,
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : 0.0,
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : "@offset_ani",
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 100, 100 ],
+               "texture" : "textures/netease/common/image/default",
+               "type" : "image",
+               "uv" : [ 0, 0 ],
+               "uv_size" : [ 0, 0 ],
+               "visible" : false
+            }
+         },
+         {
+            "sizeImg" : {
+               "alpha" : 1.0,
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : 0.0,
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : "@size_ani",
+               "texture" : "textures/netease/common/image/default",
+               "type" : "image",
+               "uv" : [ 0, 0 ],
+               "uv_size" : [ 0, 0 ],
+               "visible" : false
+            }
+         },
+         {
+            "uvImg" : {
+               "alpha" : 1.0,
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : 0.0,
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [ 100, 100 ],
+               "texture" : "textures/ui/my_eating_apple",
+               "type" : "image",
+               "uv" : "@uv_ani",
+               "uv_size" : [ 64.0, 64.0 ],
+               "visible" : false
+            }
+         },
+         {
+            "normalImg" : {
+               "alpha" : 1.0,
+               "anchor_from" : "center",
+               "anchor_to" : "center",
+               "clip_direction" : "left",
+               "clip_offset" : [ 0, 0 ],
+               "clip_ratio" : 0.0,
+               "clips_children" : false,
+               "enabled" : true,
+               "fill" : false,
+               "grayscale" : false,
+               "is_new_nine_slice" : false,
+               "keep_ratio" : true,
+               "layer" : 1,
+               "max_size" : [ 0, 0 ],
+               "min_size" : [ 0, 0 ],
+               "nine_slice_buttom" : 0,
+               "nine_slice_left" : 0,
+               "nine_slice_right" : 0,
+               "nine_slice_top" : 0,
+               "nineslice_size" : [ 0, 0, 0, 0 ],
+               "offset" : [ 0, 0 ],
+               "priority" : 0,
+               "propagate_alpha" : false,
+               "size" : [100, 100],
+               "texture" : "textures/netease/common/image/default",
+               "type" : "image",
+               "uv" : [ 0, 0 ],
+               "uv_size" : [ 0, 0 ],
+               "visible" : false
+            }
+         }
+      ],
+      "force_render_below" : false,
+      "is_showing_menu" : true,
+      "render_game_behind" : true,
+      "render_only_when_topmost" : true,
+      "should_steal_mouse" : false,
+      "type" : "screen"
+   },
+   "show_alpha_ani": {
+      "anim_type" : "alpha",
+      "duration" : 0.30,
+      "from" : 0.0,
+      "next" : "@hold_alpha_ani",
+      "to" : 1.0
+   },
+   "hold_alpha_ani" : {
+      "anim_type" : "alpha",
+      "duration" : 1,
+      "from" : 1.0,
+      "next" : "@hide_alpha_ani",
+      "to" : 1.0
+   },
+   "hide_alpha_ani" : {
+      "anim_type" : "alpha",
+      "duration" : 0.30,
+      "from" : 1.0,
+      "to" : 0.0
+   },
+   "color_ani": {
+      "anim_type" : "color",
+      "duration" : 1.0,
+      "from" : [1,0,0],
+      "to" : [0,0,1]
+   },
+   "flipbook_ani": {
+      "anim_type": "flip_book",
+       "initial_frame": 10,
+       "frame_count": 36,
+       "fps": 10,
+       "reversible": false
+   },
+   "offset_ani": {
+      "anim_type" : "offset",
+      "duration" : 1.0,
+      "from" : [0, 0],
+      "to" : [0, 50]
+   },
+   "size_ani": {
+      "anim_type" : "size",
+      "duration" : 1.0,
+      "from" : [100, 100],
+      "to" : [150, 150]
+   },
+   "uv_ani": {
+      "anim_type" : "uv",
+      "duration" : 5,
+      "from" : [0, 0],
+      "to" : [2240, 0]
+   },
+   "namespace" : "UIAnimationScreen"
+}

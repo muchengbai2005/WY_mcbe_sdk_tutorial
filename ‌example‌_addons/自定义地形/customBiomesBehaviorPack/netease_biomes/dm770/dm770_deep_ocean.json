@@ -1,0 +1,21 @@
+{
+    "format_version": "1.14.0", 
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm770_deep_ocean", 
+            "inherits": "deep_ocean"
+        }, 
+        "components": {
+            "minecraft:overworld_generation_rules": {
+                "hills_transformation": [
+                    "dm770_plains", 
+                    "dm770_forest"
+                ], 
+                "generate_for_climates": [
+                    ["medium", 1]
+                ]
+            },
+            "dm770": {}
+        }
+    }
+}

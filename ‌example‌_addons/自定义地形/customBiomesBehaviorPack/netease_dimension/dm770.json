@@ -1,0 +1,149 @@
+{
+  "format_version": "1.14.0",
+  "netease:dimension_info": {
+    "components": {
+      "netease:dimension_type": "minecraft:overworld", //维度类型，当前自定义群系源只支持minecraft:overworld
+      "netease:biome_source":[ //群系源配置，有此参数则代表使用自定义群系布局，netease:biome_source是一个数组，数组中的每个元素代表一个阶段，每个阶段会有不同的type，通过不同的type相互协作，来共同创造千变万化的群系
+        //1.摆放普通群系
+        {
+          "type":"random_with_weight",
+          "pool":[
+            {"biome_type":"dm770_bamboo_jungle", "weight":1},
+            {"biome_type":"dm770_jungle", "weight":1},
+            {"biome_type":"dm770_mesa_plateau_stone", "weight":1}
+          ]
+        },
+        // 2.在4*4的范围，border_x，border_z为1的范围内随机选择一个点摆放核心群系，这里使用沼泽，沙漠和森林充当核心群系
+        // 核心群系可以理解为暮色森林中的黑森林中心，荆棘之地等具有核心BOSS的群系
+        {
+          "type":"gen_key_biomes",
+          "len_x":4,   //x轴长度范围
+          "len_z":4,   //z轴长度范围
+          "border_x":1,
+          "border_z":1,
+          "pool":[
+            {"biome_type":"dm770_swampland", "weight": 1}
+          ]
+        },
+        //3.假如坐标点的群系为dm770_swampland(query.get_neighborhood_is_biome(0,0,6))并且(worldx & 4 == 0)则根据(worldz & 4)的结果除以4来选择最终的群系
+        //除以4的意义在于将返回只限定在0，1这两个数字
+        //此步用来保证核心群系相邻的核心群系不同
+        {
+          "type":"condition",
+          "condition":"query.get_neighborhood_is_biome(0,0,6) && math.and(variable.worldx, 4) == 0 ? (math.and(variable.worldz, 4) / 4) : -1",
+          "pool":[
+            "dm770_desert",
+            "dm770_forest"
+          ]
+        },
+        //4.假如坐标点的群系为dm770_swampland(query.get_neighborhood_is_biome(0,0,6))并且(worldx & 4 != 0)则根据(worldz & 4)的结果除以4来选择最终的群系
+        // 除以4的意义在于将返回只限定在0，1这两个数字
+        //此步用来保证核心群系相邻的核心群系不同
+        {
+          "type":"condition",
+          "condition":"query.get_neighborhood_is_biome(0,0,6) && math.and(variable.worldx, 4) != 0 ? (math.and(variable.worldz, 4) / 4) : -1",
+          "pool":[
+            "dm770_flower_forest",
+            "dm770_swampland"
+          ]
+        },
+        //5.在核心群系flower_forest周围放置伴生群系ice_muntains
+         {
+           "type":"associated",
+           "core_biome":"dm770_flower_forest",//核心群系
+           "associated_biomes":[
+             {"biome_type":"dm770_ice_mountains", "relative_pos":[0, 1]},//伴生群系
+             {"biome_type":"dm770_ice_mountains", "relative_pos":[0, -1]},//伴生群系
+             {"biome_type":"dm770_ice_mountains", "relative_pos":[-1, 0]},
+             {"biome_type":"dm770_ice_mountains", "relative_pos":[1, 0]}
+           ]
+         },
+        //6.在核心群系desert周围放置伴生群系desert_hills
+         {
+          "type":"associated",
+          "core_biome":"dm770_desert",//核心群系
+          "associated_biomes":[
+            {"biome_type":"dm770_desert_hills", "relative_pos":[0, 1]},
+            {"biome_type":"dm770_desert_hills", "relative_pos":[0, -1]},
+            {"biome_type":"dm770_desert_hills", "relative_pos":[-1, 0]},
+            {"biome_type":"dm770_desert_hills", "relative_pos":[1, 0]}
+          ]
+        },
+        //7.在核心群系forest周围放置伴生群系forest_hills
+        {
+          "type":"associated",
+          "core_biome":"dm770_forest",//核心群系
+          "associated_biomes":[
+            {"biome_type":"dm770_forest_hills", "relative_pos":[0, 1]},
+            {"biome_type":"dm770_forest_hills", "relative_pos":[0, -1]},
+            {"biome_type":"dm770_forest_hills", "relative_pos":[-1, 0]},
+            {"biome_type":"dm770_forest_hills", "relative_pos":[1, 0]}
+          ]
+        },
+        //8.在核心群系swampland周围放置伴生群系mesa
+        {
+          "type":"associated",
+          "core_biome":"dm770_swampland",//核心群系
+          "associated_biomes":[
+            {"biome_type":"dm770_mesa", "relative_pos":[0, 1]},//伴生群系
+            {"biome_type":"dm770_mesa", "relative_pos":[0, -1]},//伴生群系
+            {"biome_type":"dm770_mesa", "relative_pos":[-1, 0]},
+            {"biome_type":"dm770_mesa", "relative_pos":[1, 0]}
+          ]
+        },
+        //9.使用等比放大算法放大两倍
+        {
+          "type":"fixed_zoom_2x"
+        },
+        //10.使用原版放大算法放大两倍
+        {
+          "type":"vanilla_zoom_2x"
+        },
+        //11.使用等比放大算法放大两倍
+        {
+          "type":"fixed_zoom_2x"
+        },
+        //12.使用原版放大算法放大两倍
+        {
+          "type":"vanilla_zoom_2x"
+        },
+        //13.使用原版放大算法放大两倍
+        {
+          "type":"vanilla_zoom_2x"
+        },
+        //14.如果当前渲染的坐标点是jungle(query.get_neighborhood_is_biome(0,0,21),并且这个坐标点的上下左右至少有一个不是jungle，那么就把这个点转换为river群系
+        {
+          "type":"condition",
+          "condition":"query.get_neighborhood_is_biome(0,0,21) && (!query.get_neighborhood_is_biome(1,0,21) || !query.get_neighborhood_is_biome(-1,0,21) || !query.get_neighborhood_is_biome(0,1,21) || !query.get_neighborhood_is_biome(0,-1,21))?0:-1",
+          "pool":[
+            "dm770_river"
+          ]
+        },
+        //15.如果当前渲染的坐标点是ice_mountains(query.get_neighborhood_is_biome(0,0,13),并且这个坐标点的上下左右至少有一个不是ice_mountains，那么就把这个点转换为river群系
+        {
+          "type":"condition",
+          "condition":"query.get_neighborhood_is_biome(0,0,13) && (!query.get_neighborhood_is_biome(1,0,13) || !query.get_neighborhood_is_biome(-1,0,13) || !query.get_neighborhood_is_biome(0,1,13) || !query.get_neighborhood_is_biome(0,-1,13))?0:-1",
+          "pool":[
+            "dm770_river"
+          ]
+        },
+        //16.如果当前渲染的坐标点是desert_hills(query.get_neighborhood_is_biome(0,0,17),并且这个坐标点的上下左右至少有一个不是desert_hills，那么就把这个点转换为river群系
+        {
+          "type":"condition",
+          "condition":"query.get_neighborhood_is_biome(0,0,17) && (!query.get_neighborhood_is_biome(1,0,17) || !query.get_neighborhood_is_biome(-1,0,17) || !query.get_neighborhood_is_biome(0,1,17) || !query.get_neighborhood_is_biome(0,-1,17))?0:-1",
+          "pool":[
+            "dm770_river"
+          ]
+        },
+        //17.使用原版放大算法放大两倍
+        {
+          "type":"vanilla_zoom_2x"
+        },
+        //18.使用原版放大算法放大两倍
+        {
+          "type":"vanilla_zoom_2x"
+        }
+      ]
+    }
+  }
+}

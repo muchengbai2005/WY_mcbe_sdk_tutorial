@@ -1,0 +1,81 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "default_mat": {
+			"+defines": [
+				"USE_SKINNING",
+				"USE_OVERLAY",
+				"NETEASE_SKINNING"
+			],
+			"+samplerStates": [
+				{
+					"samplerIndex": 0,
+					"textureFilter": "Point"
+				}
+			],
+			"fragmentShader": "shaders/netease_entity_skeleton.fragment",
+			"msaaSupport": "Both",
+			"vertexFields": [
+				{
+					"field": "Position"
+				},
+				{
+					"field": "Normal"
+				},
+				{
+					"field": "BoneId0"
+				},
+				{
+					"field": "UV0"
+				}
+			],
+			"vertexShader": "shaders/netease_entity_skeleton.vertex",
+			"vrGeometryShader": "shaders/entity.geometry"
+	},
+    "mat_skeleton": {
+      "vertexShader": "shaders/metal_skeleton.vertex",
+      "vrGeometryShader": "shaders/entity.geometry",
+	  "fragmentShader": "shaders/metal_skeleton.fragment",
+		"msaaSupport": "Both",
+		"+samplerStates": [
+			{
+				"samplerIndex": 0,
+				"textureFilter": "Point"
+			},
+			{
+				"samplerIndex": 1,
+				"textureFilter": "Point"
+			},
+			{
+				"samplerIndex": 2,
+				"textureFilter": "Point"
+			},
+			{
+				"samplerIndex": 3,
+				"textureFilter": "Point"
+			}
+		],
+      "vertexFields": [
+				{
+					"field": "Position"
+				},
+				{
+					"field": "Normal"
+				},
+				{
+					"field": "BoneId0"
+				},
+				{
+					"field": "UV0"
+				}
+			],
+      "+defines": [
+				"FANCY",
+				"USE_OVERLAY",
+				"USE_SKINNING",
+				"NETEASE_SKINNING"
+		]
+    }
+
+  }
+}

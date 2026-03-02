@@ -1,0 +1,19 @@
+{
+    "editor_identifier": "customBook",
+    "item": "custombooks:test0",
+    "title1": "自定义书本的一级标题",
+    "title2": "自定义书本的二级标题",
+    "content": "第一页为书本首页，第二页为书本目录显示页。\n如果把一本书本比作一个大文件夹，\n那么\"目录\"就是它里面的子文件夹，\n\"章节\"就是\"目录\"的子文件夹。",
+    "titleArea": {
+        "offset": [
+            -10,
+            0
+        ],
+        "textSize1": 9,
+        "textSize2": 8,
+        "padding": 1
+    },
+    "pageConfig": {
+        "subtitle": "默认的副标题"
+    }
+}

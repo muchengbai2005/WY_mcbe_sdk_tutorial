@@ -1,0 +1,23 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "customblocks:customblocks_test_heavy",
+            "base_block": "custom_heavy_block",
+            "category": "custom"
+        },
+        "components": {
+            "netease:fall": {
+                "send_python_event":true,
+                "fall_acceleration":0.04,
+                "adjust_percentage":0.98,
+                "hurt_entity":true,
+                "min_height_remove_tick":100,
+                "force_break_tick":600,
+                "fall_damage_amount":2.0,
+                "max_fall_damage":40,
+                "cancel_drop":false
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "format_version": "1.14.0",
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm990_flower_forest", 
+            "inherits": "flower_forest"
+        },
+        "components": {
+            "minecraft:overworld_height": {
+                "noise_params":[0.3, 100]
+            },
+            "netease:overworld_surface":{
+                "adjustments": [
+                    //1.使用fill节点将y坐标0~30的区域填充为空气
+                    {
+                        "type": "fill",
+                        "min_height": 0,
+                        "max_height": 30,
+                        "pool": [
+                        {
+                            "fill_block": "minecraft:air",
+                            "weight": 10
+                        }
+                    ]
+                    },
+                    //2.使用噪声函数(query.noise)并利用坐标值来计算max_height,将y坐标 30 ~ max_height的区域填充为空气
+                    {
+                        "type": "fill",
+                        "min_height": 30,
+                        "max_height" : "84 + query.noise(variable.worldx / 80, variable.worldz / 80) * 30",
+                        "pool": [
+                        {
+                            "fill_block": "minecraft:air",
+                            "weight": 10
+                        }
+                    ]
+                    },
+                    //3.使用噪声函数(query.noise)并利用坐标值来计算max_height,将y坐标 30 ~ max_height的区域填充为空气
+                    //与第二步中query.noise中的参数调换位置，产生不同的噪声值，噪声值放大倍数为30，用于多层噪声叠加
+                    {
+                        "type": "fill",
+                        "min_height": 30,
+                        "max_height" : "84 + query.noise(variable.worldz / 80, variable.worldx / 80) * 30",
+                        "pool": [
+                        {
+                            "fill_block": "minecraft:air",
+                            "weight": 10
+                        }
+                    ]
+                    },
+                    //4.使用噪声函数(query.noise)并利用坐标值来计算max_height,将y坐标 30 ~ max_height的区域填充为空气
+                    //与2, 3中query.noise中使用不同的参数值，产生不同的噪声值，以及噪声值放大倍数调整为40，用于多层噪声叠加
+                    {
+                        "type": "fill",
+                        "min_height": 30,
+                        "max_height" : "84 + query.noise(variable.worldz / 20, variable.worldx / 20) * 40",
+                        "pool": [
+                        {
+                            "fill_block": "minecraft:air",
+                            "weight": 10
+                        }
+                    ]
+                    }
+                ]
+            },
+
+            
+            "dm3": {}
+        }
+    }
+}

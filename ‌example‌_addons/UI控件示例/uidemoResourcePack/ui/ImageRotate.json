@@ -1,0 +1,250 @@
+{
+   "button@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "退出",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%NeteaseComboBoxDemo.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@NeteaseComboBoxDemo.default" : {}
+         },
+         {
+            "hover@NeteaseComboBoxDemo.hover" : {}
+         },
+         {
+            "pressed@NeteaseComboBoxDemo.pressed" : {}
+         },
+         {
+            "button_label@NeteaseComboBoxDemo.button_label" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 12,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 0, 0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 75.0, 50.0 ],
+      "visible" : true
+   },
+   "menuButton@button": {
+      "$is_new_nine_slice": true,
+      "size" : [ "default", "25.0%+0.0px" ]
+   },
+   "image" : {
+      "clip_direction" : "left",
+      "clip_ratio" : 0.0,
+      "layer" : 1,
+      "size" : [ 100, 100 ],
+      "texture" : "textures/netease/common/image/default",
+      "type" : "image"
+   },
+   "Pivot@image": {
+      "size" : [ 10, 10 ],
+      "texture" : "textures/ui/ImageRotate/pivot"
+   },
+   "DraggablePivot@button": {
+      "size" : [ 10, 10 ],
+      "$is_new_nine_slice" : true,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "draggable": "both"
+   },
+   "FlexLabel" : {
+      "anchor_from" : "center",
+      "anchor_to" : "center",
+      "color" : [ 1.0, 0.0, 0.0 ],
+      "font_type" : "default",
+      "layer" : 1,
+      "text" : "",
+      "text_alignment" : "center",
+      "type" : "label"
+   },
+   "DescLabel@FlexLabel" : {
+      "anchor_from" : "bottom_left",
+      "anchor_to" : "bottom_left",
+      "size" : [ 200, "default" ],
+      "text_alignment" : "left",
+      "type" : "label"
+   },
+   "ExitButton@button" : {
+      "anchor_from" : "bottom_left",
+      "anchor_to" : "bottom_left",
+      "size" : [ 75.0, 50.0 ]
+   },
+   "Canvas": {
+      "anchor_from" : "bottom_right",
+      "anchor_to" : "bottom_right",
+      "size": [ "60.0%+0.0px", "80.0%+0.0px" ],
+      "type" : "panel"
+   },
+   "SliderWithValue" : {
+      "controls" : [
+         {
+            "slider@common.slider" : {
+               "$background_default_control" : "common.slider_background",
+               "$background_hover_control" : "common.slider_background_hover",
+               "$progress_default_clip_direction" : "left",
+               "$progress_default_control" : "common.slider_progress",
+               "$progress_hover_clip_direction" : "left",
+               "$progress_hover_control" : "common.slider_progress_hover",
+               "$slider_box_hover_layout" : "common.slider_button_hover_layout",
+               "$slider_box_indent_layout" : "common.slider_button_indent_layout",
+               "$slider_box_layout" : "common.slider_button_layout",
+               "$slider_box_locked_layout" : "common.slider_button_locked_layout",
+               "$slider_box_size" : [ 10, 16 ],
+               "$slider_direction" : "horizontal",
+               "$slider_name|default" : "netease_slider_name",
+               "$slider_step_factory_control_ids" : {
+                  "slider_step" : "@common.slider_step",
+                  "slider_step_hover" : "@common.slider_step_hover",
+                  "slider_step_progress" : "@common.slider_step_progress",
+                  "slider_step_progress_hover" : "@common.slider_step_progress_hover"
+               },
+               "$slider_tts_text_value" : "#netease_tts_text_value",
+               "anchor_from" : "top_middle",
+               "anchor_to" : "top_middle",
+               "size" : [ "default", 10.0 ]
+            }
+         },
+         {
+            "panel" : {
+               "controls" : [
+                  {
+                     "start" : {
+                        "anchor_from" : "top_left",
+                        "anchor_to" : "top_middle",
+                        "color" : [ 1.0, 0.0, 0.0 ],
+                        "font_type" : "default",
+                        "layer" : 1,
+                        "offset" : [ 0.0, 5.0 ],
+                        "text" : "-1",
+                        "text_alignment" : "center",
+                        "type" : "label"
+                     }
+                  },
+                  {
+                     "end" : {
+                        "anchor_from" : "top_right",
+                        "anchor_to" : "top_middle",
+                        "color" : [ 1.0, 0.0, 0.0 ],
+                        "font_type" : "default",
+                        "layer" : 2,
+                        "offset" : [ 0.0, 5.0 ],
+                        "text" : "1",
+                        "text_alignment" : "center",
+                        "type" : "label"
+                     }
+                  },
+                  {
+                     "center" : {
+                        "anchor_from" : "top_middle",
+                        "anchor_to" : "top_middle",
+                        "color" : [ 1.0, 0.0, 0.0 ],
+                        "font_type" : "default",
+                        "layer" : 3,
+                        "offset" : [ 0.0, 5.0 ],
+                        "text" : "0",
+                        "text_alignment" : "center",
+                        "type" : "label"
+                     }
+                  }
+               ],
+               "layer" : 37,
+               "size" : [ "default", 20.0 ],
+               "type" : "panel"
+            }
+         }
+      ],
+      "layer" : 1,
+      "size" : [ 100, "default" ],
+      "type" : "stack_panel"
+   },
+   "StretchObject" : {
+      "controls" : [],
+      "size" : [ 100.0, 10.0 ],
+      "type" : "panel"
+   },
+   "StretchItem" : {
+      "anchor_to" : "left_middle",
+      "clip_direction" : "left",
+      "clip_ratio" : 0.0,
+      "is_new_nine_slice" : true,
+      "layer" : 1,
+      "offset" : [ "20.0%+0.0px", 0.0 ],
+      "size" : "@ImageRotate.StretchWidth_out",
+      "texture" : "textures/netease/common/image/default",
+      "type" : "image"
+   },
+   "StretchWidth_in" : {
+      "anim_type" : "size",
+      "duration" : 1.0,
+      "from" : [ "100.0%+0.0px", "100.0%+0.0px" ],
+      "next" : "@ImageRotate.StretchWidth_out",
+      "to" : [ "10.0%+0.0px", "100.0%+0.0px" ]
+   },
+   "StretchWidth_out" : {
+      "anim_type" : "size",
+      "duration" : 1.0,
+      "from" : [ "10.0%+0.0px", "100.0%+0.0px" ],
+      "next" : "@ImageRotate.StretchWidth_in",
+      "to" : [ "100.0%+0.0px", "100.0%+0.0px" ]
+   },
+   "MenuScreen" : {
+      "controls" : [
+         {
+            "stack_panel": {
+               "size" : [ 200, "80.0%+0.0px" ],
+               "type" : "stack_panel",
+               "controls": [
+                  {"rotate_1@menuButton":  {"$label_text" : "局部旋转"}},
+                  {"rotate_2@menuButton":  {"$label_text" : "全局旋转"}},
+                  {"rotate_3@menuButton":  {"$label_text" : "局部旋转与全局旋转组合"}},
+                  {"rotate_4@menuButton":  {"$label_text" : "旋转与动画的组合"}}
+               ]
+            }
+         },
+         {
+            "exitBtn@ExitButton": {}
+         }
+      ],
+      "type" : "screen",
+      "gamepad_cursor_deflection_mode": true
+   },
+   "SubScreen" : {
+      "type" : "screen",
+      "gamepad_cursor_deflection_mode": true
+   },
+   "namespace" : "ImageRotate"
+}

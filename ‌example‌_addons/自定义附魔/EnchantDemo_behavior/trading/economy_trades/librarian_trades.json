@@ -1,0 +1,52 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,  // 解锁该组交易所需的村民经验
+      "groups": [
+        {
+          "num_to_select": 1,  // 从下列交易中选取几项交易
+          "trades": [
+            {
+              // 该交易需求的物品信息
+              "wants": [
+                // 第一个物品
+                {
+                  "item": "minecraft:paper", // 物品名称
+                  "quantity": 24,  // 物品数量
+                  "price_multiplier": 0.05  // 价格乘数（影响补货后的价格）
+                },
+                // 第二个物品(也可不设第二个物品)
+                {
+                  "item": "minecraft:book", // 物品名称
+                  "quantity": 1  // 物品数量
+                }
+              ],
+              // 该交易给予玩家的物品信息
+              "gives": [
+                {
+                  "item": "minecraft:book",  // 物品名称
+                  "quantity": 1,  // 物品数量
+                  "functions": [
+                    {
+                      "function": "enchant_book_for_trading",  // 交易附魔书
+                      "base_cost": 2,  // 默认为2
+                      "base_random_cost": 5,  // 默认为5
+                      "per_level_random_cost": 10,  // 默认为10
+                      "per_level_cost": 3  // 默认为3
+                    }
+                  ]
+                }
+              ],
+              // 单次交易完成后增加的村民经验值
+              "trader_exp": 2,
+              // 最大交易次数
+              "max_uses": 16,
+              // 交易完成后是否给予玩家经验，默认为true
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

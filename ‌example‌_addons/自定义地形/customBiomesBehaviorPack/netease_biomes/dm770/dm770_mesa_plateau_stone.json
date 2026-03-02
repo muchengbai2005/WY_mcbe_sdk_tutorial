@@ -1,0 +1,19 @@
+{
+    "format_version": "1.14.0", 
+    "minecraft:biome": {
+        "description": {
+            "identifier": "dm770_mesa_plateau_stone", 
+            "inherits": "mesa_plateau_stone"
+        }, 
+        "components": {
+            "minecraft:overworld_generation_rules": {
+                "hills_transformation": "dm770_mesa", 
+                "mutate_transformation": "dm770_mesa_plateau_stone_mutated", 
+                "generate_for_climates": [
+                    ["warm", 2]
+                ]
+            },
+            "dm770": {}
+        }
+    }
+}

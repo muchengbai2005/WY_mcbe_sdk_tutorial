@@ -1,0 +1,126 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "customblocks:customblocks_test0_up": {
+      "textures": "textures/blocks/customblocks_test0_up"
+    },
+	"customblocks:customblocks_test0_other": {
+      "textures": "textures/blocks/customblocks_test0_other"
+    },
+
+	"customblocks:customblocks_test_ore": {
+      "textures": "textures/blocks/customblocks_ore"
+    },
+
+	"customblocks:customblocks_test_face4_front":{
+	  "textures": "textures/blocks/customblocks_face4_front"
+	},
+	"customblocks:customblocks_test_face4_side":{
+	  "textures": "textures/blocks/customblocks_face4_side"
+	},
+	"customblocks:customblocks_test_face4_top":{
+	  "textures": "textures/blocks/customblocks_face4_top"
+	},
+	
+	"customblocks:customblocks_test_face6_front":{
+	  "textures": "textures/blocks/customblocks_face6_front"
+	},
+	"customblocks:customblocks_test_face6_back":{
+	  "textures": "textures/blocks/customblocks_face6_back"
+	},
+	"customblocks:customblocks_test_face6_side":{
+	  "textures": "textures/blocks/customblocks_face6_side"
+	},
+	"customblocks:customblocks_test_face6_top":{
+	  "textures": "textures/blocks/customblocks_face6_top"
+	},
+	"customblocks:customblocks_test_face6_down":{
+	  "textures": "textures/blocks/customblocks_face6_down"
+	},
+	"customblocks:customblocks_test_portal_blue":{
+      "textures": "textures/blocks/customblocks_portal_blue"
+    },
+	"customblocks:customblocks_test_block_entity":{
+	  "textures": "textures/blocks/customblocks_test_block_entity"
+	},
+	"customblocks:customblocks_model_decoration0":{
+      "textures": "textures/blocks/customblocks_model_decoration0"
+    },
+	"customblocks:customblocks_model_decoration1":{
+      "textures": "textures/blocks/customblocks_model_decoration1"
+    },
+	"customblocks:customblocks_model_wire":{
+      "textures": "textures/blocks/customblocks_model_wire"
+    },
+	"customblocks:customblocks_model_wire_item":{
+      "textures": "textures/blocks/customblocks_model_wire_item"
+    },
+	"customblocks:customblocks_model_flower":{
+      "textures": "textures/blocks/customblocks_model_flower"
+	},
+	"customblocks:customblocks_flower_extend":{
+      "textures": "textures/blocks/customblocks_flower_extend"
+	},
+	"customblocks:customblocks_redstone_block": {
+		"textures": "textures/blocks/customblocks_redstone_block"
+	},
+	"customblocks:customblocks_redstone_consumer_up": {
+		"textures": [
+			"textures/blocks/customblocks_consumer_off",
+			"textures/blocks/customblocks_consumer_on"
+		]
+	},
+	"customblocks:customblocks_consumer_stone_slab": {
+		"textures": "textures/blocks/customblocks_stone_slab_top"
+	},
+	"test_block_icon": {
+		"textures": "textures/blocks/spider_chestplate"
+	},
+	"destroy_squirrel": {
+		"textures": "textures/entity/squirrel/red"
+	},
+	"customblocks:customblocks_test_heavy":{
+		"textures":"textures/blocks/customblocks_test_heavy"
+	},
+	"customblocks:customblocks_slime":{
+		"textures":"textures/blocks/customblocks_slime"
+	},
+	"customblocks:customblocks_leaves_tinted": {
+		"textures": "textures/blocks/customblocks_leaves"
+	},
+	"customblocks:customblocks_test_face4_front_tinted":{
+		"textures": "textures/blocks/glazed_terracotta_light_blue",
+		 // 使用"use_colormap"字段指定使用的colormap贴图路径, 分辨率固定为256x256, 暂不支持其他分辨率
+		 // colormap支持字符串和dict格式，配置成字符串格式表示所有维度使用同一张colormap贴图，配置成dict格式可以对指定维度使用指定colormap贴图，其中default所指定为默认贴图。
+		"use_colormap":"textures/colormap/my_grass"
+	},
+	"customblocks:customblocks_test_face4_front_not_tinted":{
+		"textures": "textures/blocks/glazed_terracotta_light_blue"
+	},
+	"customblocks:customblocks_test_face4_top_tinted":{
+		"textures": "textures/blocks/glazed_terracotta_white",
+		 // 使用"use_colormap"字段指定使用的colormap贴图路径, 分辨率固定为256x256, 暂不支持其他分辨率
+		 // colormap支持字符串和dict格式，配置成字符串格式表示所有维度使用同一张colormap贴图，配置成dict格式可以对指定维度使用指定colormap贴图，其中default所指定为默认贴图。
+		"use_colormap":"textures/colormap/my_grass"
+	},
+	"customblocks:customblocks_test_face4_top_tinted_by_dimension":{
+		"textures": "textures/blocks/glazed_terracotta_white",
+		 // 使用"use_colormap"字段指定使用的colormap贴图路径, 分辨率固定为256x256, 暂不支持其他分辨率
+		 // colormap支持字符串和dict格式，配置成字符串格式表示所有维度使用同一张colormap贴图，配置成dict格式可以对指定维度使用指定colormap贴图，其中default所指定为默认贴图。
+		"use_colormap":{
+			"default":"textures/colormap/my_grass",   // 默认的colormap贴图（所在维度没有配置对应贴图时，使用默认贴图）
+			"overworld":"textures/colormap/my_grass", // 主世界的colormap贴图
+			"nether":"textures/colormap/my_color2",   // 下界的colormap贴图
+			"the end":"textures/colormap/my_color2",   // 末地的colormap贴图
+			// 自定义维度colormap贴图
+			"dm3":"textures/colormap/my_color2",
+			"dm5":"textures/colormap/my_color2",
+			"dm22":"textures/colormap/my_color2"
+		}
+	},	
+	"customblocks:customblocks_test_face4_top_sides_not_tinted":{
+		"textures": "textures/blocks/glazed_terracotta_white"
+	}
+	}
+}
